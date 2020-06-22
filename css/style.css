@@ -1,7 +1,6 @@
-*{
-margin: 0;
-padding: 0;
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -29,7 +28,6 @@ a {
     font-weight: normal;
 }
 
-
 @font-face {
     font-family: "FuturaLightC";
     src: url("../fonts/FuturaLightC.ttf") format("truetype");
@@ -46,25 +44,21 @@ body {
 
 .menu {
     position: fixed!important;
-width: 384px;
-height: 100%;
-right: 0px;
-top: 0px;
-
-background: #FFFFFF;
-
+    width: 384px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    background: #FFFFFF;
 }
 
 .block1 {
     position: absolute;
-width: 1536px;
-height: 1080px;
-left: 0px;
-top: 0px;
-background: rgba(46, 46, 46, 0.07);
+    width: 1536px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: rgba(46, 46, 46, 0.07);
 }
-
-
 
 .block1 p {
     color: #000;
@@ -75,77 +69,86 @@ background: rgba(46, 46, 46, 0.07);
 
 .menu ul {
     position: absolute;
-width: 285px;
-height: 389px;
-left: 41px;
-top: 432px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 60px;
+    width: 285px;
+    height: 389px;
+    left: 41px;
+    top: 432px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 60px;
 /* or 200% */
-text-align: right;
-letter-spacing: 0.12em;
-
-color: #2E2E2E;
+    text-align: right;
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
 }
-.menu ul li{
+
+.menu ul li {
     list-style-type: none;
+}
+
+.menu-item-wrapper {
+    display: flex;
+    position: relative;
+    left: -20%;
+    transition: all 0.2s ease-out;
+}
+
+.menu-item:hover .menu-item-wrapper {
+    left: 0;
 }
 
 .head {
     position: absolute;
-width: 267px;
-height: 150px;
-left: 61px;
-top: 147px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
+    width: 267px;
+    height: 150px;
+    left: 61px;
+    top: 147px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
 /* or 117% */
-text-align: right;
-letter-spacing: 0.12em;
-color: #2E2E2E;
+    text-align: right;
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
 }
-.img1{
-    position: absolute;
-width: 768px;
-height: 1080px;
-left: 0px;
-top: 0px;
-background: url(../img/block1.jpg);
 
+.img1 {
+    position: absolute;
+    width: 768px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: url(../img/block1.jpg);
 }
 
 .menu .btn {
     position: absolute;
-width: 264px;
-height: 52px;
-left: calc(50% - 264px/2);
-top: 765px;
-color:#fff;
-background: #2E2E2E;
-border: 2px solid #2E2E2E;
-
+    width: 264px;
+    height: 52px;
+    left: calc(50% - 264px/2);
+    top: 765px;
+    color: #fff;
+    background: #2E2E2E;
+    border: 2px solid #2E2E2E;
 }
 
 .menu .btn a {
     position: absolute;
-width: 185px;
-height: 58px;
-left: calc(50% - 185px/2 - 0.5px);
-top: calc(50% - 58px/2 + 14px);
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.12em;
-color: #FFFFFF;
-
+    width: 185px;
+    height: 58px;
+    left: calc(50% - 185px/2 - 0.5px);
+    top: calc(50% - 58px/2 + 14px);
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
 
 h1 {
@@ -158,856 +161,797 @@ h1 {
 }
 
 h2 {
-  position: absolute;
-width: 697px;
-height: 186px;
-right: 45px;
-top: 418px;
-padding: 0;
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 71px;
+    position: absolute;
+    width: 697px;
+    height: 186px;
+    right: 45px;
+    top: 418px;
+    padding: 0;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 71px;
 /* or 142% */
-letter-spacing: 0.1em;
-color: #2E2E2E;
+    letter-spacing: 0.1em;
+    color: #2E2E2E;
 }
 
 h3 {
     position: absolute;
-width: 700px;
-height: 218px;
-right: 41px;
-top: 756px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 30px;
+    width: 700px;
+    height: 218px;
+    right: 41px;
+    top: 756px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
 /* or 100% */
-letter-spacing: 0.08em;
-color: #2E2E2E;
+    letter-spacing: 0.08em;
+    color: #2E2E2E;
 }
 
-.stoimost{
+.stoimost {
     position: absolute;
-width: 1536px;
-height: 183px;
-right: 384px;
-top: 1080px;
+    width: 1536px;
+    height: 183px;
+    right: 384px;
+    top: 1080px;
 }
 
 .raschet {
-position: absolute;
-width: 787px;
-height: 45px;
-left: 87px;
-top: 43px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 45px;
+    position: absolute;
+    width: 787px;
+    height: 45px;
+    left: 87px;
+    top: 43px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
 /* identical to box height, or 150% */
-letter-spacing: 0.08em;
-color: #000000;
+    letter-spacing: 0.08em;
+    color: #000000;
 }
 
-.stoimost .btn{
+.stoimost .btn {
     position: absolute;
-width: 407px;
-height: 65px;
-left: 941px;
-top: 58px;
-color:#fff;
-background: #2E2E2E;
+    width: 407px;
+    height: 65px;
+    left: 941px;
+    top: 58px;
+    color: #fff;
+    background: #2E2E2E;
 }
 
 .stoimost .btn a {
     position: absolute;
-width: 333px;
-height: 45px;
-left: calc(50% - 333px/2 + 1px);
-top: calc(50% - 45px/2);
-
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 29px;
-line-height: 45px;
+    width: 333px;
+    height: 45px;
+    left: calc(50% - 333px/2 + 1px);
+    top: calc(50% - 45px/2);
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 45px;
 /* identical to box height, or 150% */
-
-letter-spacing: 0.12em;
-
-color: #FFFFFF;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
 
 .gallery {
-position: absolute;
-width: 1536px;
-height: 3300px;
-left: 0px;
-top: 180px;
+    position: absolute;
+    width: 1536px;
+    height: 3300px;
+    left: 0px;
+    top: 180px;
 }
 
 .gallery1 {
-position: absolute;
-width: 723px;
-height: 528px;
-left: 30px;
-top: 0px;
-
+    position: absolute;
+    width: 723px;
+    height: 528px;
+    left: 30px;
+    top: 0px;
 }
 
 img {
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery2 {
-position: absolute;
-width: 753px;
-height: 525px;
-left: 783px;
-top: 0px;
+    position: absolute;
+    width: 753px;
+    height: 525px;
+    left: 783px;
+    top: 0px;
 }
 
 .gallery3 {
-position: absolute;
-width: 723px;
-height: 525px;
-left: 30px;
-top: 555px;
+    position: absolute;
+    width: 723px;
+    height: 525px;
+    left: 30px;
+    top: 555px;
 }
 
 .gallery4 {
-position: absolute;
-width: 753px;
-height: 525px;
-left: 783px;
-top: 555px;
+    position: absolute;
+    width: 753px;
+    height: 525px;
+    left: 783px;
+    top: 555px;
 }
 
 .gallery5 {
-position: absolute;
-width: 1536px;
-height: 1080px;
-left: 0px;
-top: 1110px;
+    position: absolute;
+    width: 1536px;
+    height: 1080px;
+    left: 0px;
+    top: 1110px;
 }
 
 .gallery5 {
-position: absolute;
-width: 753px;
-height: 525px;
-left: 783px;
-top: 555px;
+    position: absolute;
+    width: 753px;
+    height: 525px;
+    left: 783px;
+    top: 555px;
 }
 
 .gallery6 {
-position: absolute;
-width: 1536px;
-height: 1080px;
-left: 0px;
-top: 1110px;
+    position: absolute;
+    width: 1536px;
+    height: 1080px;
+    left: 0px;
+    top: 1110px;
 }
 
 .gallery7 {
-position: absolute;
-width: 723px;
-height: 525px;
-left: 30px;
-top: 2220px;
+    position: absolute;
+    width: 723px;
+    height: 525px;
+    left: 30px;
+    top: 2220px;
 }
 
 .gallery8 {
-position: absolute;
-width: 753px;
-height: 525px;
-left: 783px;
-top: 2220px;
+    position: absolute;
+    width: 753px;
+    height: 525px;
+    left: 783px;
+    top: 2220px;
 }
 
 .gallery9 {
-position: absolute;
-width: 723px;
-height: 525px;
-left: 30px;
-top: 2775px;
+    position: absolute;
+    width: 723px;
+    height: 525px;
+    left: 30px;
+    top: 2775px;
 }
 
 .gallery10 {
-position: absolute;
-width: 753px;
-height: 525px;
-left: 783px;
-top: 2775px;
+    position: absolute;
+    width: 753px;
+    height: 525px;
+    left: 783px;
+    top: 2775px;
 }
 
 .shkalablock {
-position: absolute;
-width: 1536px;
-height: 510px;
-left: 0px;
-top: 3462px;
-background: #FFFFFF;
+    position: absolute;
+    width: 1536px;
+    height: 510px;
+    left: 0px;
+    top: 3462px;
+    background: #FFFFFF;
 }
 
 .shkalablock h2 {
-position: absolute;
-width: 1313px;
-height: 38px;
-left: 85px;
-top: 80px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 49px;
-line-height: 37px;
-letter-spacing: 0.12em;
-color: #2E2E2E;
+    position: absolute;
+    width: 1313px;
+    height: 38px;
+    left: 85px;
+    top: 80px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 49px;
+    line-height: 37px;
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
 }
 
 .shkalablock h3 {
-position: absolute;
-width: 477px;
-height: 38px;
-left: 166px;
-top: 166px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 37px;
-letter-spacing: 0.12em;
-color: #2E2E2E;
+    position: absolute;
+    width: 477px;
+    height: 38px;
+    left: 166px;
+    top: 166px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
 }
 
 .shkalablock h4 {
     position: absolute;
-width: 60px;
-height: 60px;
-left: 90px;
-top: 151px;
-border: 2px solid #000000;
+    width: 60px;
+    height: 60px;
+    left: 90px;
+    top: 151px;
+    border: 2px solid #000000;
 }
+
 .shkalablock .num {
     position: absolute;
-width: 18px;
-height: 38px;
-left: 20px;
-top: 13px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 37px;
+    width: 18px;
+    height: 38px;
+    left: 20px;
+    top: 13px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
 /* identical to box height, or 125% */
-letter-spacing: 0.12em;
-color: #000000;
-
+    letter-spacing: 0.12em;
+    color: #000000;
 }
 
 .shkalablock .btn {
-position: absolute;
-width: 410px;
-height: 72px;
-right: 186px;
-bottom: 65px;
-
-background: #2E2E2E;
-border: 4px solid #2E2E2E;
-box-sizing: border-box;
+    position: absolute;
+    width: 410px;
+    height: 72px;
+    right: 186px;
+    bottom: 65px;
+    background: #2E2E2E;
+    border: 4px solid #2E2E2E;
+    box-sizing: border-box;
 }
 
-.shkalablock .btn a{
+.shkalablock .btn a {
     position: absolute;
-width: 182px;
-height: 90px;
-left: calc(50% - 182px/2 + 6px);
-top: calc(50% - 90px/2 + 23px);
-
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 45px;
+    width: 182px;
+    height: 90px;
+    left: calc(50% - 182px/2 + 6px);
+    top: calc(50% - 90px/2 + 23px);
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
 /* or 150% */
-
-letter-spacing: 0.12em;
-
-color: #FFFFFF;
-
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
 
 .priceblock {
     position: absolute;
-width: 1536px;
-height: 1080px;
-left: 0px;
-top: 4121px;
+    width: 1536px;
+    height: 1080px;
+    left: 0px;
+    top: 4121px;
 }
 
 .priceglr {
-position: absolute;
-width: 753px;
-height: 1080px;
-left: 783px;
-top: 0px;
-
+    position: absolute;
+    width: 753px;
+    height: 1080px;
+    left: 783px;
+    top: 0px;
 }
 
-.priceblock1{
+.priceblock1 {
     position: absolute;
-width: 663px;
-height: 170px;
-left: 90px;
-top: 0px;
-
-background: rgba(46, 46, 46, 0.07);
+    width: 663px;
+    height: 170px;
+    left: 90px;
+    top: 0px;
+    background: rgba(46, 46, 46, 0.07);
 }
 
 .priceblock1 h2, .priceblock4 h2, .priceblock5 h2, .priceblock6 h2 {
-position: absolute;
-width: 600px;
-height: 74px;
-left: 34px;
-top: 71px;
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 37px;
+    position: absolute;
+    width: 600px;
+    height: 74px;
+    left: 34px;
+    top: 71px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 37px;
 /* or 94% */
-letter-spacing: 0.12em;
-color: #2E2E2E;
-
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
 }
 
 .priceblock2 h2, .priceblock3 h2 {
     position: absolute;
-width: 560px;
-height: 64px;
-left: 31px;
-top: 57px;
-
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 35px;
+    width: 560px;
+    height: 64px;
+    left: 31px;
+    top: 57px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 35px;
 /* or 87% */
-letter-spacing: 0.12em;
-color: #2E2E2E;
-
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
 }
+
 .priceblock1 a, .priceblock2 a, .priceblock3 a, .priceblock4 a, .priceblock5 a {
-position: absolute;
-width: 196px;
-height: 43px;
-left: 460px;
-top: 127px;
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: 300;
-font-size: 25px;
-line-height: 37px;
+    position: absolute;
+    width: 196px;
+    height: 43px;
+    left: 460px;
+    top: 127px;
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 37px;
 /* identical to box height, or 150% */
-
-letter-spacing: 0.12em;
-
-color: #000000;
-
+    letter-spacing: 0.12em;
+    color: #000000;
 }
 
 .priceblock6 a {
     position: absolute;
-width: 196px;
-height: 43px;
-left: 460px;
-top: 108px;
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: 300;
-font-size: 25px;
-line-height: 37px;
+    width: 196px;
+    height: 43px;
+    left: 460px;
+    top: 108px;
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 37px;
 /* identical to box height, or 150% */
-
-letter-spacing: 0.12em;
-
-color: #000000;
+    letter-spacing: 0.12em;
+    color: #000000;
 }
 
-.priceblock2{
-position: absolute;
-width: 663px;
-height: 170px;
-left: 90px;
-top: 185px;
-
-background: rgba(46, 46, 46, 0.07);
-}
-
-.priceblock3{
-   position: absolute;
-width: 663px;
-height: 170px;
-left: 90px;
-top: 370px;
-
-background: rgba(46, 46, 46, 0.07); 
-}
-
-.priceblock4{
+.priceblock2 {
     position: absolute;
-width: 663px;
-height: 170px;
-left: 90px;
-top: 555px;
-
-background: rgba(0, 0, 0, 0.07);
+    width: 663px;
+    height: 170px;
+    left: 90px;
+    top: 185px;
+    background: rgba(46, 46, 46, 0.07);
 }
 
-.priceblock5{
+.priceblock3 {
     position: absolute;
-width: 663px;
-height: 170px;
-left: 90px;
-top: 740px;
-
-background: rgba(46, 46, 46, 0.07);
+    width: 663px;
+    height: 170px;
+    left: 90px;
+    top: 370px;
+    background: rgba(46, 46, 46, 0.07);
 }
 
-.priceblock6{
-   position: absolute;
-width: 663px;
-height: 155px;
-left: 90px;
-top: 925px;
+.priceblock4 {
+    position: absolute;
+    width: 663px;
+    height: 170px;
+    left: 90px;
+    top: 555px;
+    background: rgba(0, 0, 0, 0.07);
+}
 
-background: rgba(46, 46, 46, 0.07); 
+.priceblock5 {
+    position: absolute;
+    width: 663px;
+    height: 170px;
+    left: 90px;
+    top: 740px;
+    background: rgba(46, 46, 46, 0.07);
+}
 
+.priceblock6 {
+    position: absolute;
+    width: 663px;
+    height: 155px;
+    left: 90px;
+    top: 925px;
+    background: rgba(46, 46, 46, 0.07);
 }
 
 .pricevariationblock {
-position: absolute;
-width: 1536px;
-height: 850px;
-left: 0px;
-top: 6250px;
-
+    position: absolute;
+    width: 1536px;
+    height: 850px;
+    left: 0px;
+    top: 6250px;
 }
 
 .pricevariation1 {
-position: absolute;
-width: 1355px;
-height: 178px;
-left: 91px;
-top: 0px;
-
-background: #2E2E2E;
-
+    position: absolute;
+    width: 1355px;
+    height: 178px;
+    left: 91px;
+    top: 0px;
+    background: #2E2E2E;
 }
 
 .pricevariation2 {
-position: absolute;
-width: 1356px;
-height: 190px;
-left: 90px;
-top: 212px;
-background: #2E2E2E;
-    
+    position: absolute;
+    width: 1356px;
+    height: 190px;
+    left: 90px;
+    top: 212px;
+    background: #2E2E2E;
 }
 
 .pricevariation3 {
-position: absolute;
-width: 1356px;
-height: 190px;
-left: 90px;
-top: 436px;
-background: #2E2E2E;
-
-    
+    position: absolute;
+    width: 1356px;
+    height: 190px;
+    left: 90px;
+    top: 436px;
+    background: #2E2E2E;
 }
 
 .pricevariation4 {
-
-position: absolute;
-width: 1356px;
-height: 190px;
-left: 90px;
-top: 660px;
-background: #2E2E2E;
-    
+    position: absolute;
+    width: 1356px;
+    height: 190px;
+    left: 90px;
+    top: 660px;
+    background: #2E2E2E;
 }
 
 .pricevariation1 h2, .pricevariation2 h2, .pricevariation3 h2 {
     position: absolute;
-width: 156px;
-height: 38px;
-left: 86px;
-top: 70px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 35px;
-line-height: 37px;
+    width: 156px;
+    height: 38px;
+    left: 86px;
+    top: 70px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 37px;
 /* identical to box height, or 107% */
-letter-spacing: 0.12em;
-color: #FFFFFF;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
 
 .pricevariation4 h2 {
-position: absolute;
-width: 314px;
-height: 110px;
-left: 87px;
-top: 58px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 34px;
-line-height: 30px;
+    position: absolute;
+    width: 314px;
+    height: 110px;
+    left: 87px;
+    top: 58px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 30px;
 /* or 86% */
-letter-spacing: 0.12em;
-color: #FFFFFF;
-
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
 
 .pricevariation1 h3, .pricevariation2 h3, .pricevariation3 h3, .pricevariation4 h3 {
     position: absolute;
-width: 293px;
-height: 54px;
-left: 662px;
-top: 76px;
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 35px;
-line-height: 37px;
+    width: 293px;
+    height: 54px;
+    left: 662px;
+    top: 76px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 37px;
 /* or 107% */
-letter-spacing: 0.12em;
-color: #FFFFFF;
-
-} 
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+}
 
 .pricevariation1 .btn, .pricevariation2 .btn, .pricevariation3 .btn, .pricevariation4 .btn {
- position: absolute;
-width: 263px;
-height: 51px;
-right: 46px;
-top: 69px;
-background: #FFFFFF;
-
-} 
+    position: absolute;
+    width: 263px;
+    height: 51px;
+    right: 46px;
+    top: 69px;
+    background: #FFFFFF;
+}
 
 .pricevariation1 .btn a, .pricevariation2 .btn a, .pricevariation3 .btn a, .pricevariation4 .btn a {
- position: absolute;
-width: 154px;
-height: 37px;
-left: calc(50% - 154px/2 + 8.5px);
-top: calc(50% - 37px/2 - 2px);
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 45px;
+    position: absolute;
+    width: 154px;
+    height: 37px;
+    left: calc(50% - 154px/2 + 8.5px);
+    top: calc(50% - 37px/2 - 2px);
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
 /* or 150% */
-letter-spacing: 0.12em;
-color: #2E2E2E;
-
-} 
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
+}
 
 .buroblock {
-position: absolute;
-width: 768px;
-height: 1080px;
-left: 0px;
-top: 7237px;
-background: #2E2E2E;
-
+    position: absolute;
+    width: 768px;
+    height: 1080px;
+    left: 0px;
+    top: 7237px;
+    background: #2E2E2E;
 }
 
 .buroimgblock {
-position: absolute;
-width: 768px;
-height: 1080px;
-left: 768px;
-top: 7237px;
-
+    position: absolute;
+    width: 768px;
+    height: 1080px;
+    left: 768px;
+    top: 7237px;
 }
 
 .buroblock h2 {
-position: absolute;
-width: 222px;
-height: 38px;
-left: 87px;
-top: 78px;
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 50px;
+    position: absolute;
+    width: 222px;
+    height: 38px;
+    left: 87px;
+    top: 78px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 50px;
 /* or 100% */
-letter-spacing: 0.12em;
-color: #FFFFFF;
-
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
 
 .buroblock p {
     position: absolute;
-width: 559px;
-height: 607px;
-left: 90px;
-top: 182px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 25px;
-line-height: 30px;
+    width: 559px;
+    height: 607px;
+    left: 90px;
+    top: 182px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
 /* or 120% */
-color: #FFFFFF;
-
+    color: #FFFFFF;
 }
 
 .buroimgblock2 {
-   position: absolute;
-width: 768px;
-height: 1080px;
-left: 0px;
-top: 8317px;
-
+    position: absolute;
+    width: 768px;
+    height: 1080px;
+    left: 0px;
+    top: 8317px;
 }
 
-.buroblock2{
+.buroblock2 {
     position: absolute;
-width: 768px;
-height: 1080px;
-left: 768px;
-top: 8317px;
-background: rgba(0, 0, 0, 0.04);
-
+    width: 768px;
+    height: 1080px;
+    left: 768px;
+    top: 8317px;
+    background: rgba(0, 0, 0, 0.04);
 }
 
 .buroblock2 h2 {
-position: absolute;
-width: 553px;
-height: 50px;
-left: 96px;
-top: 78px;
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 49px;
-line-height: 50px;
+    position: absolute;
+    width: 553px;
+    height: 50px;
+    left: 96px;
+    top: 78px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 49px;
+    line-height: 50px;
 /* identical to box height, or 100% */
-letter-spacing: 0.12em;
-color: #000000;
-
+    letter-spacing: 0.12em;
+    color: #000000;
 }
 
 .buroblock2 p {
-position: absolute;
-width: 589px;
-height: 842px;
-left: 89px;
-top: 173px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 25px;
-line-height: 30px;
+    position: absolute;
+    width: 589px;
+    height: 842px;
+    left: 89px;
+    top: 173px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
 /* or 120% */
-color: #000000;
-
+    color: #000000;
 }
 
 .faces {
-position: absolute;
-width: 1536px;
-height: 2160px;
-left: 0px;
-top: 9589px;
-background: rgba(0, 0, 0, 0.04);
+    position: absolute;
+    width: 1536px;
+    height: 2160px;
+    left: 0px;
+    top: 9589px;
+    background: rgba(0, 0, 0, 0.04);
 }
 
 .facesimgblock {
-position: absolute;
-width: 768px;
-height: 1080px;
-left: 0px;
-top: 30px;
-background: #2E2E2E;
-
+    position: absolute;
+    width: 768px;
+    height: 1080px;
+    left: 0px;
+    top: 30px;
+    background: #2E2E2E;
 }
 
 .facesblock {
-position: absolute;
-width: 768px;
-height: 1080px;
-left: 768px;
-top: 30px;
-
+    position: absolute;
+    width: 768px;
+    height: 1080px;
+    left: 768px;
+    top: 30px;
 }
 
-.facesblock p{
-position: absolute;
-width: 674px;
-height: 207px;
-left: 28px;
-top: 86px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 37px;
+.facesblock p {
+    position: absolute;
+    width: 674px;
+    height: 207px;
+    left: 28px;
+    top: 86px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
 /* or 125% */
-letter-spacing: 0.12em;
-color: #000000;
-
+    letter-spacing: 0.12em;
+    color: #000000;
 }
 
 .facesblock h2 {
-position: absolute;
-width: 256px;
-height: 49px;
-left: 15px;
-top: 529px;
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: 300;
-font-size: 30px;
-line-height: 65px;
+    position: absolute;
+    width: 256px;
+    height: 49px;
+    left: 15px;
+    top: 529px;
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 65px;
 /* or 217% */
-letter-spacing: 0.12em;
-color: #000000;
-
+    letter-spacing: 0.12em;
+    color: #000000;
 }
 
 .facesblock h3 {
-position: absolute;
-width: 443px;
-height: 111px;
-left: 15px;
-top: 587px;
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 50px;
+    position: absolute;
+    width: 443px;
+    height: 111px;
+    left: 15px;
+    top: 587px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
 /* or 100% */
-letter-spacing: 0.12em;
-color: #000000;
-
+    letter-spacing: 0.12em;
+    color: #000000;
 }
 
 .facesblock h4 {
-position: absolute;
-width: 367px;
-height: 56px;
-left: 28px;
-top: 699px;
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: 300;
-font-size: 30px;
-line-height: 65px;
+    position: absolute;
+    width: 367px;
+    height: 56px;
+    left: 28px;
+    top: 699px;
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 65px;
 /* or 217% */
-letter-spacing: 0.12em;
-color: #000000;
-
+    letter-spacing: 0.12em;
+    color: #000000;
 }
 
-
 .facesblock2 {
-position: absolute;
-width: 768px;
-height: 1080px;
-left: 0px;
-top: 1110px;
-background: rgba(0, 0, 0, 0.04);
-
+    position: absolute;
+    width: 768px;
+    height: 1080px;
+    left: 0px;
+    top: 1110px;
+    background: rgba(0, 0, 0, 0.04);
 }
 
 .facesimgblock2 {
-position: absolute;
-width: 768px;
-height: 1080px;
-left: 768px;
-top: 1110px;
-
+    position: absolute;
+    width: 768px;
+    height: 1080px;
+    left: 768px;
+    top: 1110px;
 }
 
-.facesblock2 p{
-position: absolute;
-width: 674px;
-height: 207px;
-left: 28px;
-top: 86px;
-font-family: FuturaBookC;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 37px;
+.facesblock2 p {
+    position: absolute;
+    width: 674px;
+    height: 207px;
+    left: 28px;
+    top: 86px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
 /* or 125% */
-letter-spacing: 0.12em;
-color: #000000;
-text-align: right;
-
+    letter-spacing: 0.12em;
+    color: #000000;
+    text-align: right;
 }
 
 .facesblock2 h2 {
-position: absolute;
-width: 256px;
-height: 49px;
-left: 274px;
-top: 529px;
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: 300;
-font-size: 30px;
-line-height: 65px;
+    position: absolute;
+    width: 256px;
+    height: 49px;
+    left: 274px;
+    top: 529px;
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 65px;
 /* or 217% */
-letter-spacing: 0.12em;
-color: #000000;
-text-align: right;
-
-
+    letter-spacing: 0.12em;
+    color: #000000;
+    text-align: right;
 }
 
 .facesblock2 h3 {
-position: absolute;
-width: 443px;
-height: 111px;
-left: 274px;
-top: 587px;
-font-family: FuturaMediumC;
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 50px;
+    position: absolute;
+    width: 443px;
+    height: 111px;
+    left: 274px;
+    top: 587px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
 /* or 100% */
-letter-spacing: 0.12em;
-color: #000000;
-text-align: right;
-
-
+    letter-spacing: 0.12em;
+    color: #000000;
+    text-align: right;
 }
 
 .facesblock2 h4 {
-position: absolute;
-width: 367px;
-height: 56px;
-left: 274px;
-top: 699px;
-font-family: FuturaLightC;
-font-style: normal;
-font-weight: 300;
-font-size: 30px;
-line-height: 65px;
+    position: absolute;
+    width: 367px;
+    height: 56px;
+    left: 274px;
+    top: 699px;
+    font-family: FuturaLightC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 65px;
 /* or 217% */
-letter-spacing: 0.12em;
-color: #000000;
-
+    letter-spacing: 0.12em;
+    color: #000000;
 }
