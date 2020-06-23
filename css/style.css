@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: #2E2E2E;
 }
 
 @font-face {
@@ -105,17 +106,6 @@ top: 83px;
 
 .menu ul li {
     list-style-type: none;
-}
-
-.menu-item-wrapper {
-    display: flex;
-    position: relative;
-    left: -20%;
-    transition: all 0.2s ease-out;
-}
-
-.menu-item:hover .menu-item-wrapper {
-    left: 0;
 }
 
 .head {
