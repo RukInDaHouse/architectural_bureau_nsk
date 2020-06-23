@@ -84,6 +84,17 @@ body {
     color: #2E2E2E;
 }
 
+.transition-translate {
+  position: relative;
+  cursor: pointer;
+  right:0%;
+  transition: 1s linear;
+}
+
+.transition-translate:hover {
+  right: 5%;
+}
+
 .menu ul li {
     list-style-type: none;
 }
