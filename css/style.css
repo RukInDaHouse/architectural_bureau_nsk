@@ -446,7 +446,24 @@ top: 373px;
     width: 1536px;
     height: 1080px;
     left: 0px;
-    top: 4121px;
+    top: 3972px;
+}
+
+.priceblock h1 {
+    position: absolute;
+    width: 437px;
+    height: 50px;
+    left: 90px;
+    top: 0;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 49px;
+    line-height: 50px;
+/* identical to box height, or 100% */
+    letter-spacing: 0.12em;
+    color: #000000;
+    text-decoration: underline;
 }
 
 .priceglr {
@@ -454,7 +471,7 @@ top: 373px;
     width: 753px;
     height: 1080px;
     left: 783px;
-    top: 0px;
+    top: 100px;
 }
 
 .priceblock1 {
@@ -462,7 +479,7 @@ top: 373px;
     width: 663px;
     height: 170px;
     left: 90px;
-    top: 0px;
+    top: 100px;
     background: rgba(46, 46, 46, 0.07);
 }
 
@@ -535,7 +552,7 @@ top: 373px;
     width: 663px;
     height: 170px;
     left: 90px;
-    top: 185px;
+    top: 285px;
     background: rgba(46, 46, 46, 0.07);
 }
 
@@ -544,7 +561,7 @@ top: 373px;
     width: 663px;
     height: 170px;
     left: 90px;
-    top: 370px;
+    top: 470px;
     background: rgba(46, 46, 46, 0.07);
 }
 
@@ -553,7 +570,7 @@ top: 373px;
     width: 663px;
     height: 170px;
     left: 90px;
-    top: 555px;
+    top: 655px;
     background: rgba(0, 0, 0, 0.07);
 }
 
@@ -562,7 +579,7 @@ top: 373px;
     width: 663px;
     height: 170px;
     left: 90px;
-    top: 740px;
+    top: 840px;
     background: rgba(46, 46, 46, 0.07);
 }
 
@@ -571,7 +588,7 @@ top: 373px;
     width: 663px;
     height: 155px;
     left: 90px;
-    top: 925px;
+    top: 1025px;
     background: rgba(46, 46, 46, 0.07);
 }
 
