@@ -463,7 +463,8 @@ top: 373px;
 /* identical to box height, or 100% */
     letter-spacing: 0.12em;
     color: #000000;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 2px solid #2E2E2E;
 }
 
 .priceglr {
@@ -716,6 +717,7 @@ top: 373px;
     left: 0px;
     top: 7237px;
     background: #2E2E2E;
+
 }
 
 .buroimgblock {
@@ -729,7 +731,7 @@ top: 373px;
 .buroblock h2 {
     position: absolute;
     width: 222px;
-    height: 38px;
+    height: 50px;
     left: 87px;
     top: 78px;
     font-family: FuturaMediumC;
@@ -740,6 +742,8 @@ top: 373px;
 /* or 100% */
     letter-spacing: 0.12em;
     color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid #FFF;
 }
 
 .buroblock p {
@@ -788,6 +792,8 @@ top: 373px;
 /* identical to box height, or 100% */
     letter-spacing: 0.12em;
     color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid #2E2E2E;
 }
 
 .buroblock2 p {
