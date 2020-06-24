@@ -901,7 +901,7 @@ top: 373px;
     color: #2E2E2E;
 }
 
-.date {
+.facesblock .date {
    position: absolute;
     width: 147px;
     height: 223px;
@@ -917,7 +917,7 @@ top: 373px;
     color: #2E2E2E;
 }
 
-.prize {
+.facesblock .prize {
     position: absolute;
     width: 394px;
     height: 234px;
@@ -932,6 +932,41 @@ top: 373px;
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
+
+.facesblock2 .date {
+   position: absolute;
+    width: 147px;
+    height: 223px;
+    left: 0px;
+    top: 48px;
+     font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+/* identical to box height, or 160% */
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
+    text-align: right;
+}
+
+.facesblock2 .prize {
+    position: absolute;
+    width: 394px;
+    height: 234px;
+    left: 130px;
+    top: 48px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+/* identical to box height, or 160% */
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
+    text-align: right;
+}
+
 
 .facesblock2 {
     position: absolute;
