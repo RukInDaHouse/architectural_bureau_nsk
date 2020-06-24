@@ -160,14 +160,6 @@ top: 83px;
     color: #FFFFFF;
 }
 
-h1 {
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 16px;
-    font-weight: lighter;
-    color: #000 !important;
-    margin: 20px;
-}
 
 h2 {
     position: absolute;
@@ -1050,4 +1042,28 @@ top: 373px;
 /* or 217% */
     letter-spacing: 0.12em;
     color: #2E2E2E;
+}
+
+.winner {
+    position: absolute;
+    width: 1536px;
+    height: 183px;
+    left: 0px;
+    top: 11749px;
+    background: #2E2E2E;
+}
+.winner h1 {
+    position: absolute;
+    width: 1045.28px;
+    height: 75px;
+    left: 88px;
+    top: 54px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+/* or 125% */
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
