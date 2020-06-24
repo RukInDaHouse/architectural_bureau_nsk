@@ -888,7 +888,7 @@ top: 373px;
 .facesblock h4 {
     position: absolute;
     width: 367px;
-    height: 56px;
+    height: 302px;
     left: 28px;
     top: 699px;
     font-family: FuturaLightC;
@@ -897,6 +897,38 @@ top: 373px;
     font-size: 30px;
     line-height: 65px;
 /* or 217% */
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
+}
+
+.date {
+   position: absolute;
+    width: 147px;
+    height: 223px;
+    left: 0px;
+    top: 48px;
+     font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+/* identical to box height, or 160% */
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
+}
+
+.prize {
+    position: absolute;
+    width: 394px;
+    height: 234px;
+    left: 130px;
+    top: 48px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+/* identical to box height, or 160% */
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
