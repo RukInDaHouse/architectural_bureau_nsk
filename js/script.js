@@ -1,36 +1,19 @@
+   const body = document.body,
+                scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+                height = scrollWrap.getBoundingClientRect().height - 1,
+                speed = 0.04;
 
-            var counter = document.querySelector(".percent");
+            var offset = 0;
 
-            TweenLite.set(counter, {
-                xPercent: -5,
-                yPercent: -5,
-            });
+            body.style.height = Math.floor(height) + "px";
 
-            window.addEventListener("mousemove", moveCounter);
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
 
-            function moveCounter(e) {
-                TweenLite.to(counter, 0.5, {
-                    x: e.clientX,
-                    y: e.clientY,
-                });
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                scrollWrap.style.transform = scroll;
+
+                callScroll = requestAnimationFrame(smoothScroll);
             }
 
-            function progress() {
-                var windowScrollTop = $(window).scrollTop();
-                var docHeight = $(document).height();
-                var windowHeight = $(window).height();
-                var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
-
-                var $bgColor = progress > 99 ? "#fff" : "#fff";
-                var $textColor = progress > 99 ? "#fff" : "#333";
-
-                $("h1")
-                    .text(Math.round(progress) + "%")
-                    .css({ color: $textColor });
-
-                $(".fill")
-                    .height(progress + "%")
-                    .css({ backgroundColor: $bgColor });
-            }
-            progress();
-            $(document).on("scroll", progress);
+            smoothScroll();
