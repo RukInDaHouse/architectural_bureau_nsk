@@ -44,75 +44,75 @@ body {
 }
 
 .img-container {
-  width: 100%;
-  padding-top: 66.66%;
-  overflow: hidden;
+    width: 100%;
+    padding-top: 66.66%;
+    overflow: hidden;
 }
 
 .dreff-holder {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .dreff-holder .dreff-img {
-  --blur: 0;
-  --brightness: 1;
-  --grayscale: 0;
-  --scale: 1;
-  --sepia: 0.5;
-  --front-blur: 0;
-  --front-brightness: 1;
-  --front-grayscale: 0;
-  --front-scale: 1;
-  --front-sepia: 0.5;
-  --duration: 0.5s;
-  --hover-blur: 3px;
-  --hover-brightness: 0.6;
-  --hover-grayscale: 1;
-  --hover-scale: 1;
-  --hover-sepia: 0;
-  --hover-duration: 2s;
-  --hover-front-blur: 0;
-  --hover-front-brightness: 1;
-  --hover-front-grayscale: 0;
-  --hover-front-scale: 1.15;
-  --hover-front-sepia: 0;
-  --hover-front-duration: 3s;
-  --hover-front-clippath: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(var(--scale));
-  -webkit-transform: translate(-50%, -50%) scale(var(--scale));
-  filter: blur(var(--blur)) brightness(var(--brightness)) grayscale(var(--grayscale)) sepia(var(--sepia));
-  -webkit-filter: blur(var(--blur)) brightness(var(--brightness)) grayscale(var(--grayscale)) sepia(var(--sepia));
-  transition: var(--duration);
-  -webkit-transition: var(--duration);
+    --blur: 0;
+    --brightness: 1;
+    --grayscale: 0;
+    --scale: 1;
+    --sepia: 0.5;
+    --front-blur: 0;
+    --front-brightness: 1;
+    --front-grayscale: 0;
+    --front-scale: 1;
+    --front-sepia: 0.5;
+    --duration: 0.5s;
+    --hover-blur: 3px;
+    --hover-brightness: 0.6;
+    --hover-grayscale: 1;
+    --hover-scale: 1;
+    --hover-sepia: 0;
+    --hover-duration: 2s;
+    --hover-front-blur: 0;
+    --hover-front-brightness: 1;
+    --hover-front-grayscale: 0;
+    --hover-front-scale: 1.15;
+    --hover-front-sepia: 0;
+    --hover-front-duration: 3s;
+    --hover-front-clippath: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(var(--scale));
+    -webkit-transform: translate(-50%, -50%) scale(var(--scale));
+    filter: blur(var(--blur)) brightness(var(--brightness)) grayscale(var(--grayscale)) sepia(var(--sepia));
+    -webkit-filter: blur(var(--blur)) brightness(var(--brightness)) grayscale(var(--grayscale)) sepia(var(--sepia));
+    transition: var(--duration);
+    -webkit-transition: var(--duration);
 }
 
 .dreff-holder .dreff-front {
-  transform: translate(-50%, -50%) scale(var(--front-scale));
-  -webkit-transform: translate(-50%, -50%) scale(var(--front-scale));
-  filter: blur(var(--front-blur)) brightness(var(--front-brightness)) grayscale(var(--front-grayscale)) sepia(var(--front-sepia));
-  -webkit-filter: blur(var(--front-blur)) brightness(var(--front-brightness)) grayscale(var(--front-grayscale)) sepia(var(--front-sepia));
-  clip-path: var(--hover-front-clippath);
-  -webkit-clip-path: var(--hover-front-clippath);
+    transform: translate(-50%, -50%) scale(var(--front-scale));
+    -webkit-transform: translate(-50%, -50%) scale(var(--front-scale));
+    filter: blur(var(--front-blur)) brightness(var(--front-brightness)) grayscale(var(--front-grayscale)) sepia(var(--front-sepia));
+    -webkit-filter: blur(var(--front-blur)) brightness(var(--front-brightness)) grayscale(var(--front-grayscale)) sepia(var(--front-sepia));
+    clip-path: var(--hover-front-clippath);
+    -webkit-clip-path: var(--hover-front-clippath);
 }
 
 .dreff-holder:hover .dreff-back {
-  filter: blur(var(--hover-blur)) brightness(var(--hover-brightness)) grayscale(var(--hover-grayscale)) sepia(var(--hover-sepia));
-  -webkit-filter: blur(var(--hover-blur)) brightness(var(--hover-brightness)) grayscale(var(--hover-grayscale)) sepia(var(--hover-sepia));
-  transform: translate(-50%, -50%) scale(var(--hover-scale));
-  -webkit-transform: translate(-50%, -50%) scale(var(--hover-scale));
-  transition: all var(--hover-duration);
+    filter: blur(var(--hover-blur)) brightness(var(--hover-brightness)) grayscale(var(--hover-grayscale)) sepia(var(--hover-sepia));
+    -webkit-filter: blur(var(--hover-blur)) brightness(var(--hover-brightness)) grayscale(var(--hover-grayscale)) sepia(var(--hover-sepia));
+    transform: translate(-50%, -50%) scale(var(--hover-scale));
+    -webkit-transform: translate(-50%, -50%) scale(var(--hover-scale));
+    transition: all var(--hover-duration);
 }
 
 .dreff-holder:hover .dreff-front {
-  filter: blur(var(--hover-front-blur)) brightness(var(--hover-front-brightness)) grayscale(var(--hover-front-grayscale)) sepia(var(--hover-front-sepia));
-  -webkit-filter: blur(var(--hover-front-blur)) brightness(var(--hover-front-brightness)) grayscale(var(--hover-front-grayscale)) sepia(var(--hover-front-sepia));
-  transform: translate(-50%, -50%) scale(var(--hover-front-scale));
-  -webkit-transform: translate(-50%, -50%) scale(var(--hover-front-scale));
-  transition: all var(--hover-front-duration);
+    filter: blur(var(--hover-front-blur)) brightness(var(--hover-front-brightness)) grayscale(var(--hover-front-grayscale)) sepia(var(--hover-front-sepia));
+    -webkit-filter: blur(var(--hover-front-blur)) brightness(var(--hover-front-brightness)) grayscale(var(--hover-front-grayscale)) sepia(var(--hover-front-sepia));
+    transform: translate(-50%, -50%) scale(var(--hover-front-scale));
+    -webkit-transform: translate(-50%, -50%) scale(var(--hover-front-scale));
+    transition: all var(--hover-front-duration);
 }
 
 .menu {
@@ -166,14 +166,14 @@ body {
 }
 
 .transition-translate {
-  position: relative;
-  cursor: pointer;
-  right:0%;
-  transition: 1s linear;
+    position: relative;
+    cursor: pointer;
+    right: 0%;
+    transition: 1s linear;
 }
 
 .transition-translate:hover {
-  right: 5%;
+    right: 5%;
 }
 
 .menu ul li {
@@ -231,7 +231,6 @@ body {
     letter-spacing: 0.12em;
     color: #FFFFFF;
 }
-
 
 h2 {
     position: absolute;
@@ -483,10 +482,10 @@ img {
 
 .shkalablock .btn {
     position: absolute;
-width: 410px;
-height: 72px;
-right: 186px;
-top: 373px;
+    width: 410px;
+    height: 72px;
+    right: 186px;
+    top: 373px;
 }
 
 .shkalablock .btn a {
@@ -781,7 +780,6 @@ top: 373px;
     left: 0px;
     top: 7237px;
     background: #2E2E2E;
-
 }
 
 .buroimgblock {
@@ -966,12 +964,12 @@ top: 373px;
 }
 
 .facesblock .date {
-   position: absolute;
+    position: absolute;
     width: 147px;
     height: 223px;
     left: 0px;
     top: 48px;
-     font-family: FuturaBookC;
+    font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -998,12 +996,12 @@ top: 373px;
 }
 
 .facesblock2 .date {
-   position: absolute;
+    position: absolute;
     width: 147px;
     height: 223px;
     left: 0px;
     top: 48px;
-     font-family: FuturaBookC;
+    font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -1030,7 +1028,6 @@ top: 373px;
     color: #2E2E2E;
     text-align: right;
 }
-
 
 .facesblock2 {
     position: absolute;
@@ -1124,6 +1121,7 @@ top: 373px;
     top: 11749px;
     background: #2E2E2E;
 }
+
 .winner h1 {
     position: absolute;
     width: 1045.28px;
