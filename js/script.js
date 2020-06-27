@@ -16,4 +16,6 @@
                 callScroll = requestAnimationFrame(smoothScroll);
             }
 
-            smoothScroll();
+        smoothScroll();
+
+            
