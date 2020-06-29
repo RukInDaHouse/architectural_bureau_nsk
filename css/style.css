@@ -1176,9 +1176,9 @@ span::after {
 #touch:checked + .slide {height: 300px;} 
 
 
-html *,
-html *:before,
-html *:after {
+h4 *,
+h4 *:before,
+h4 *:after {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
