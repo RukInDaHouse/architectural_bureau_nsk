@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html xmlns=http://www.w3.org/1999/xhtml>
-
-<head>
-	<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-	<meta charset=UTF-8>
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/style.css">
-	<title>Архитектурное бюро Вячеслава Никольского</title>
-</head>
-
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Block Reveal Effect On Scroll</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
         <div class="smooth-scroll-wrapper">
             <div class="content">
 
@@ -96,7 +93,7 @@
                     <h2>Управление проектом</h2><a href="#">Подробнее</a></div>
                 <div class="priceblock6">
                     <h2>Авторский надзор</h2><a href="#">Подробнее</a></div>
-                <div class="priceglr"><img src="./img/priceglr.png"></div>
+                <div class="priceglr"><div class="img"><img src="./img/glr7.png"  id="test-img"></div></div>
             </div>
         </div>
                 </div>
@@ -145,7 +142,8 @@
                 <br> В портфолио бюро входят объекты в Москве, Санкт-Петербурге, Новосибирске и Европе.
                 <br>
                 <br> Также специалисты нашего бюро работали над такими знаковыми и масштабными проектами, как интерьеры Национального театра Республики Алтай в Горно-Алтайске и Алтайского драматического театра им. В. М. Шукшина в Барнауле, реставрация интерьеров станций Московского метрополитена.</p>
-        </div>
+        </div>      <div class="buroimgblock"><div class="img"><img src="./img/buroimgblock.png"></div></div>
+
             </div>
         </div>
           <div class="container">
@@ -156,7 +154,8 @@
                 <br> Для достижения этого необходимо учитывать множество самых разнообразных факторов, таких как: — общие семейные ценности и традиции; — привычки и характер каждого члена семьи; — финансовые возможности. бюджет; — национальные или региональные черты; — конструктивные особенности здания; — влияние научно-технического прогресса; — воздействие на экологию и т.п.
                 <br>
                 <br> Только рассматривая все эти факторы возможно создавать по настоящему уникальные авторские интерьеры, где авторами являются и архитектор и заказчик. А это значит, что такой интерьер никогда не устареет и не перестанет быть актуальным. Он будет жить и меняться вместе со своими хозяевами.</p>
-        </div> 
+                
+        </div> <div class="buroimgblock2"><div class="img"><img src="./img/buroimgblock2.png"></div></div>
         </div>
           <div class="container">
             <div class="faces">
@@ -199,10 +198,45 @@
 и фестиваля 
 «Золотая капитель»</h1></div>     
         </div>
-    </body>
-<script type=text/javascript src=./js/script.js></script>
+ <script type=text/javascript src=./js/script.js></script>
 <script type=text/javascript src=./js/hover.js></script>
+        <script>
+            const body = document.body,
+                scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+                height = scrollWrap.getBoundingClientRect().height - 1,
+                speed = 0.04;
 
+            var offset = 0;
 
+            body.style.height = Math.floor(height) + "px";
 
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
+
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                scrollWrap.style.transform = scroll;
+
+                callScroll = requestAnimationFrame(smoothScroll);
+            }
+
+            smoothScroll();
+
+            $(function () {
+                var elements = $(".text, .img").toArray();
+                $(window).scroll(function () {
+                    elements.forEach(function (item) {
+                        if ($(this).scrollTop() >= $(item).offset().top - 400) {
+                            $(item).addClass("reveal");
+                        }
+                    });
+                });
+                elements.forEach(function (item) {
+                    if ($(this).scrollTop() >= $(item).offset().top - 400) {
+                        $(item).addClass("reveal");
+                    }
+                });
+            });
+        </script>
+
+    </body>
 </html>
