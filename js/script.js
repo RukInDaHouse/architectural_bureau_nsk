@@ -1,4 +1,5 @@
-   const body = document.body,
+<script>
+            const body = document.body,
                 scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
                 height = scrollWrap.getBoundingClientRect().height - 1,
                 speed = 0.04;
@@ -16,6 +17,21 @@
                 callScroll = requestAnimationFrame(smoothScroll);
             }
 
-        smoothScroll();
+            smoothScroll();
 
-            
+            $(function () {
+                var elements = $(".text, .img").toArray();
+                $(window).scroll(function () {
+                    elements.forEach(function (item) {
+                        if ($(this).scrollTop() >= $(item).offset().top - 400) {
+                            $(item).addClass("reveal");
+                        }
+                    });
+                });
+                elements.forEach(function (item) {
+                    if ($(this).scrollTop() >= $(item).offset().top - 400) {
+                        $(item).addClass("reveal");
+                    }
+                });
+            });
+        </script>
