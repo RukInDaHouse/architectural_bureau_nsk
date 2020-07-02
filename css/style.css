@@ -1175,3 +1175,97 @@ span::after {
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
 #touch:checked + .slide {height: 300px;} 
+
+
+.text {
+    color: transparent;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: 0.8s;
+}
+.text.reveal {
+    color: #fff;
+    animation: revealTextAnimation 0.64s ease forwards;
+}
+.text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*   z-index: 1; */
+}
+.text.reveal:before {
+    background: #6c2e13;
+    animation: blockRevealAnimation 0.8s ease forwards;
+}
+
+.img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.img img {
+    max-width: 100%;
+    opacity: 0;
+}
+
+.img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.img.reveal:before {
+    background: #544c26;
+    animation: blockRevealAnimation 0.8s ease forwards;
+}
+
+.img.reveal img {
+    animation: revealImgAnimation 0.8s ease forwards;
+}
+
+@keyframes blockRevealAnimation {
+    0% {
+        left: -100%;
+    }
+    40% {
+        left: 0;
+    }
+    60% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+@keyframes revealTextAnimation {
+    0% {
+        color: transparent;
+    }
+    40% {
+        color: transparent;
+    }
+    60% {
+        color: #333;
+    }
+}
+@keyframes revealImgAnimation {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
