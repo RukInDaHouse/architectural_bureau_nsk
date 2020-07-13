@@ -1277,7 +1277,7 @@ left: 192px;
 top: 1118px;   
 }
 
-.projecttext1 {
+.projecttext h1 {
 position: absolute;
 width: 90px;
 height: 38px;
@@ -1293,7 +1293,7 @@ letter-spacing: 0.12em;
 color: #2E2E2E;
 }
 
-.projecttext2 {
+.projecttext h5 {
     position: relative;
 width: 120%;
 height: 38px;
