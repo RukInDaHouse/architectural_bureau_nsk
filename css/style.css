@@ -1269,4 +1269,42 @@ left: 862px;
 top: 9151px;
 }
 
+.projecttext {
+ position: absolute;
+width: 414px;
+height: 454px;
+left: 192px;
+top: 1118px;   
+}
 
+.projecttext1 {
+position: absolute;
+width: 90px;
+height: 38px;
+left: 192px;
+margin-top: 0px;
+font-family: FuturaLightC;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 37px;
+/* identical to box height, or 150% */
+letter-spacing: 0.12em;
+color: #2E2E2E;
+}
+
+.projecttext2 {
+    position: relative;
+width: 120%;
+height: 38px;
+left: 192px;
+margin-top: 29px;
+font-family: FuturaMediumC;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 37px;
+/* identical to box height, or 150% */
+letter-spacing: 0.12em;
+color: #2E2E2E;
+}
