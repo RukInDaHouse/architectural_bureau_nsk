@@ -1190,95 +1190,83 @@ span::after {
 
 #touch:checked + .slide {height: 300px;} 
 
-
-.text {
-    color: transparent;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    transition: 0.8s;
-}
-.text.reveal {
-    color: #fff;
-    animation: revealTextAnimation 0.64s ease forwards;
-}
-.text:before {
-    content: "";
+.project1img1 {
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /*   z-index: 1; */
+    width: 1536px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
 }
-.text.reveal:before {
-    background: #6c2e13;
-    animation: blockRevealAnimation 0.8s ease forwards;
-}
-
-.img {
-    position: relative;
-    
+.project1img2 {
+   position: absolute;
+width: 1152px;
+height: 864px;
+left: 192px;
+top: 1642px;
 }
 
-.img img {
-    max-width: 100%;
-    opacity: 0;
+.project1img3 {
+   position: absolute;
+width: 1152px;
+height: 864px;
+left: 192px;
+top: 2578px;
 }
 
-.img:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+.project1img4 {
+   position: absolute;
+width: 1152px;
+height: 878px;
+left: 192px;
+top: 3514px;
 }
 
-.img.reveal:before {
-    background: #544c26;
-    animation: blockRevealAnimation 0.8s ease forwards;
+.project1img5 {
+   position: absolute;
+width: 1152px;
+height: 864px;
+left: 192px;
+top: 4459px;
 }
 
-.img.reveal img {
-    animation: revealImgAnimation 0.8s ease forwards;
+.project1img6 {
+   position: absolute;
+width: 1152px;
+height: 864px;
+left: 192px;
+top: 5390px;
 }
 
-@keyframes blockRevealAnimation {
-    0% {
-        left: -100%;
-    }
-    40% {
-        left: 0;
-    }
-    60% {
-        left: 0;
-    }
-    100% {
-        left: 100%;
-    }
+.project1img7 {
+   position: absolute;
+width: 724px;
+height: 864px;
+left: 406px;
+top: 6321px;
 }
-@keyframes revealTextAnimation {
-    0% {
-        color: transparent;
-    }
-    40% {
-        color: transparent;
-    }
-    60% {
-        color: #333;
-    }
+
+.project1img8 {
+   position: absolute;
+width: 1152px;
+height: 861px;
+left: 192px;
+top: 7252px;
 }
-@keyframes revealImgAnimation {
-    0% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+
+.project1img9 {
+   position: absolute;
+width: 1152px;
+height: 861px;
+left: 192px;
+top: 8180px;
+}
+
+.project1img10 {
+  position: absolute;
+width: 613px;
+height: 417px;
+left: 862px;
+top: 9151px;
 }
 
 
