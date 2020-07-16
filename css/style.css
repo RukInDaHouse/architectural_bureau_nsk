@@ -1596,3 +1596,36 @@ color: #2E2E2E;
   opacity: 1;
   right: -2rem;
 }
+
+.next {
+    position: absolute;
+    height: 417px;
+left: 0px;
+top: 9151px;
+width: 862px;
+font-family: FuturaBookC;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 45px;
+/* identical to box height, or 90% */
+letter-spacing: 0.12em;
+}
+
+.nexttext {
+   position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+font-family: FuturaBookC;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 45px;
+/* identical to box height, or 90% */
+
+letter-spacing: 0.12em;
+
+color: #000000;
+}
