@@ -1,3 +1,23 @@
+html, body {
+    scrollbar-color: #000 #fff;     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: 24px;  /* толщина */
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #843465;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+}
 
 .text {
     color: transparent;
