@@ -7,6 +7,8 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta http-equiv=Content-Type content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="css/style.css">
+	  <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
+
 	<title>Архитектурное бюро Вячеслава Никольского</title>
 </head>
 
@@ -52,20 +54,18 @@
 			<div class="btn"><a>Рассчитать стоимость</a></div>
 			<div class="gallery">
 				<div class="gallery1">
-     <div class="card">
-    <div class="image">
-      <img src="http://1.bp.blogspot.com/-EhPr4LXcywE/Udr594sPHTI/AAAAAAAAAJ4/Tv4y4CBLTPM/s400/Cristina-Otero-2.jpg"/>
-    </div>
-    <div class="details">
-      <div class="center">
-        <h1>Someone famous<br><span>team leader</span></h1>
-        <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
-       
-      </div>
-    </div>
+     	<div class="card">
+        <img src="./img/glr1.png" id="test-img" alt="" />
+<div class="overlay"></div>
+  <div class="info">
+    <div class="title">Untitled Work #170</div>
+    <div class="price">Original at $500, prints from $80</div>
   </div>
-    </div>
-				<div class="gallery2" >
+</div>
+      </div>
+     
+  
+				<div class="gallery2" data-aos="fade-left">
 					
 					<a href="#"><img src="./img/glr2.png" id="test-img" alt=""></a>
 				
@@ -226,7 +226,13 @@
 </body>
 <script type=text/javascript src=./js/script.js></script>
 <script type=text/javascript src=./js/hover.js></script>
-
+<script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+<script  src="./script.js"></script>
+<script type="text/javascript">AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });</script>
 
 
 </html>
