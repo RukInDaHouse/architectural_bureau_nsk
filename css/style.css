@@ -304,7 +304,52 @@ body {
     top: 765px;
     color: #fff;
     background: #2E2E2E;
-    border: 2px solid #2E2E2E;
+    border: 2px solid #f7f7f7;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.menu .btn:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #fff;
+}
+
+.menu .btn:hover {
+  cursor: pointer;
+}
+.menu .btn:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.btn:after {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+.btn:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .menu .btn a {
