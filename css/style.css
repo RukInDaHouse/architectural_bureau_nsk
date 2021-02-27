@@ -191,7 +191,6 @@ body {
   -ms-animation: fadeInLeft ease 1.5s;
 }
 
-
 .first__block {
     width: 100%;
     height: 100vh;
@@ -206,6 +205,11 @@ body {
     left: 0px;
     top: 0px;
     float: left;
+}
+
+.first__block__img img{
+    width: 100%;
+    height: 100%;
 }
 
 .first__block__textarea {
@@ -293,11 +297,11 @@ body {
 }
 
 .btn:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 .btn:hover:after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .menu .btn a {
@@ -323,8 +327,16 @@ body {
     top: 1080px;
 }
 
-.get__price__text {
-    position: absolute;
+.get__price__block {
+    background: #000;
+    height: 18vh;
+    width: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.get__price__text__block h1{
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
@@ -332,6 +344,38 @@ body {
     line-height: 150%;
     letter-spacing: 0.08em;
     color: #2E2E2E;
+    width: 50%;
+    float: left;
+}
+
+.get__price__button__block {
+    width: 50%;
+    float: left;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.get__price__button__block .btn {
+    width: 407px;
+    height: 65px;
+    left: 941px;
+    top: 58px;
+    color: #fff;
+    background: #2E2E2E;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.get__price__block .btn a {
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
 
 .stoimost .btn {
@@ -360,110 +404,27 @@ body {
     color: #FFFFFF;
 }
 
-.gallery {
-    position: absolute;
-    width: 1536px;
-    height: 3300px;
-    left: 0px;
-    top: 180px;
-}
-
-.gallery1 {
-    position: absolute;
-    width: 723px;
-    height: 528px;
-    left: 30px;
-    top: 0px;
-}
-
-img {
+.gallery__block {
     width: 100%;
-    height: 100%;
 }
 
-.gallery2 {
-    position: absolute;
-    width: 753px;
-    height: 525px;
-    left: 783px;
-    top: 0px;
+.first__column__images,
+.second__column__images {
+    width: 50%;
+    float: left;
 }
 
-.gallery3 {
-    position: absolute;
-    width: 723px;
-    height: 525px;
-    left: 30px;
-    top: 555px;
+.first__column__images img,
+.second__column__images img {
+    padding: 10px 0px 10px 0px;
 }
 
-.gallery4 {
-    position: absolute;
-    width: 753px;
-    height: 525px;
-    left: 783px;
-    top: 555px;
-}
-
-.gallery5 {
-    position: absolute;
-    width: 1536px;
-    height: 1080px;
-    left: 0px;
-    top: 1110px;
-}
-
-.gallery5 {
-    position: absolute;
-    width: 753px;
-    height: 525px;
-    left: 783px;
-    top: 555px;
-}
-
-.gallery6 {
-    position: absolute;
-    width: 1536px;
-    height: 1080px;
-    left: 0px;
-    top: 1110px;
-}
-
-.gallery7 {
-    position: absolute;
-    width: 723px;
-    height: 525px;
-    left: 30px;
-    top: 2220px;
-}
-
-.gallery8 {
-    position: absolute;
-    width: 753px;
-    height: 525px;
-    left: 783px;
-    top: 2220px;
-}
-
-.gallery9 {
-    position: absolute;
-    width: 723px;
-    height: 525px;
-    left: 30px;
-    top: 2775px;
-}
-
-.gallery10 {
-    position: absolute;
-    width: 753px;
-    height: 525px;
-    left: 783px;
-    top: 2775px;
+.solo__image {
+    width: 100%;
+    float: left;
 }
 
 .shkalablock {
-    position: absolute;
-    width: 1536px;
     height: 510px;
     left: 0px;
     top: 3462px;
@@ -471,11 +432,6 @@ img {
 }
 
 .shkalablock h2 {
-    position: absolute;
-    width: 1313px;
-    height: 38px;
-    left: 85px;
-    top: 80px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
@@ -486,11 +442,6 @@ img {
 }
 
 .shkalablock h3 {
-    position: absolute;
-    width: 477px;
-    height: 38px;
-    left: 166px;
-    top: 166px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
@@ -501,26 +452,15 @@ img {
 }
 
 .shkalablock h4 {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 90px;
-    top: 151px;
     border: 2px solid #000000;
 }
 
 .shkalablock .num {
-    position: absolute;
-    width: 18px;
-    height: 38px;
-    left: 20px;
-    top: 13px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 37px;
-/* identical to box height, or 125% */
+    line-height: 125%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
@@ -1302,15 +1242,6 @@ letter-spacing: 0.12em;
 color: #2E2E2E;
 }
 
-
-.card {
-  position: relative;
-  overflow: hidden;
-}
-.card img {
-  display: block;
-}
-
 .info {
   position: absolute;
   bottom: 0;
@@ -1336,38 +1267,6 @@ color: #2E2E2E;
   color: white;
   font-style: none;
 }
-
-.overlay {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-  background: linear-gradient(0deg, black, transparent 100%);
-  -webkit-transition: all 100ms 0ms ease-in-out;
-  transition: all 100ms 0ms ease-in-out;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
-}
-
-.card:hover .overlay {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  opacity: 1;
-  -webkit-transition: all 300ms 0ms ease-in-out;
-  transition: all 300ms 0ms ease-in-out;
-}
-.card:hover .info {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  opacity: 1;
-  -webkit-transition: all 180ms 50ms ease-in-out;
-  transition: all 180ms 50ms ease-in-out;
-}
-
-
 
 @keyframes fadeIn {
  0% {
