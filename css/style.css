@@ -1,8 +1,3 @@
-html, body {
-    scrollbar-color: #000 #fff;
-    scrollbar-width: 24px;
-}
-
 ::-webkit-scrollbar {
     width: 8px; 
     height: 8px;
@@ -18,91 +13,6 @@ html, body {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #000;
 }
-
-.text {
-    color: transparent;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    transition: 0.8s;
-}
-.text.reveal {
-    color: #fff;
-    animation: revealTextAnimation 0.64s ease forwards;
-}
-.text:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /*   z-index: 1; */
-}
-.text.reveal:before {
-    background: #6c2e13;
-    animation: blockRevealAnimation 0.8s ease forwards;
-}
-
-.img {
-    position: relative;
-    display: block;
-    overflow: hidden;
-}
-
-.img img {
-    opacity: 0;
-}
-
-.img:before {
-  
-}
-
-.img.reveal:before {
-    background: #544c26;
-    animation: blockRevealAnimation 0.8s ease forwards;
-}
-
-.img.reveal img {
-    animation: revealImgAnimation 0.8s ease forwards;
-}
-
-@keyframes blockRevealAnimation {
-    0% {
-        left: -100%;
-    }
-    40% {
-        left: 0;
-    }
-    60% {
-        left: 0;
-    }
-    100% {
-        left: 100%;
-    }
-}
-@keyframes revealTextAnimation {
-    0% {
-        color: transparent;
-    }
-    40% {
-        color: transparent;
-    }
-    60% {
-        color: #333;
-    }
-}
-@keyframes revealImgAnimation {
-    0% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 
 * {
     margin: 0;
@@ -147,15 +57,82 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    scrollbar-color: #000 #fff;
+    scrollbar-width: 24px;
+}
+
+.body__block {
+    width: 82vw;
+}
+
+.logo {
+    position: absolute;
+    width: 229px;
+    height: 126px;
+    left: 74px;
+    top: 83px;
+}
+
+.menu ul {
+    position: absolute;
+    width: 285px;
+    height: 389px;
+    left: 41px;
+    top: 432px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: right;
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
+}
+
+.transition-translate {
+    position: relative;
+    cursor: pointer;
+    right: 0%;
+    transition: 1s linear;
+}
+
+.transition-translate:hover {
+    right: 5%;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu__header {
+    position: absolute;
+    width: 267px;
+    height: 150px;
+    left: 61px;
+    top: 247px;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: right;
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
 }
 
 .menu {
     position: fixed!important;
-    width: 384px;
+    width: 18vw;
     height: 100%;
     right: 0px;
     top: 0px;
-    background: #FFFFFF;
+    bottom: 0px;
+    background: #FFF;
+    z-index: 10;
+}
+
+.menu__list ul {
+    margin-right: 300px;
 }
 
 .fade__first__line {
@@ -214,86 +191,57 @@ body {
   -ms-animation: fadeInLeft ease 1.5s;
 }
 
-.block1 {
-    position: absolute;
-    width: 1536px;
-    height: 1080px;
+
+.first__block {
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0;
+    display: inline-block;
+}
+
+.first__block__img{
+    width: 50%;
+    height: 100%;
     left: 0px;
     top: 0px;
-    background: rgba(46, 46, 46, 0.07);
+    float: left;
 }
 
-.block1 p {
-    color: #000;
-    font-family: Helvetica, sans-serif;
-    font-size: 100px;
-    font-weight: 200;
+.first__block__textarea {
+    width: 50%;
+    height: 100%;
+    background:#FFF;
+    margin-top: 0;
+    z-index: 9;
+    float: left;
 }
 
-.logo {
-    position: absolute;
-    width: 229px;
-    height: 126px;
-    left: 74px;
-    top: 83px;
+.first__block__text {
+    margin-top: 55%;
 }
 
-.menu ul {
-    position: absolute;
-    width: 285px;
-    height: 389px;
-    left: 41px;
-    top: 432px;
+.first__block__text h2 {
+    padding: 0px 0px 130px 25px;
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 142%;
+    letter-spacing: 0.1em;
+    color: #2E2E2E;
+}
+
+.first__block__text h3 {
+    padding: 0px 0px 0px 25px;
+    padding-right: 25px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 60px;
-/* or 200% */
-    text-align: right;
-    letter-spacing: 0.12em;
+    line-height: 100%;
+    letter-spacing: 0.08em;
     color: #2E2E2E;
-}
-
-.transition-translate {
-    position: relative;
-    cursor: pointer;
-    right: 0%;
-    transition: 1s linear;
-}
-
-.transition-translate:hover {
-    right: 5%;
-}
-
-.menu ul li {
-    list-style-type: none;
-}
-
-.menu__header {
-    position: absolute;
-    width: 267px;
-    height: 150px;
-    left: 61px;
-    top: 247px;
-    font-family: FuturaBookC;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-/* or 117% */
-    text-align: right;
-    letter-spacing: 0.12em;
-    color: #2E2E2E;
-}
-
-.img1 {
-    position: absolute;
-    width: 768px;
-    height: 1080px;
-    left: 0px;
-    top: 0px;
-    background: url(../img/block1.jpg);
 }
 
 .menu .btn {
@@ -305,11 +253,11 @@ body {
     color: #fff;
     background: #2E2E2E;
     border: 2px solid #f7f7f7;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: .3s;
-  transition: .3s;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 .menu .btn:after {
@@ -367,39 +315,6 @@ body {
     color: #FFFFFF;
 }
 
-h2 {
-    position: absolute;
-    width: 697px;
-    height: 186px;
-    right: 45px;
-    top: 418px;
-    padding: 0;
-    font-family: FuturaMediumC;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 71px;
-/* or 142% */
-    letter-spacing: 0.1em;
-    color: #2E2E2E;
-}
-
-h3 {
-    position: absolute;
-    width: 700px;
-    height: 218px;
-    right: 41px;
-    top: 756px;
-    font-family: FuturaBookC;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 30px;
-/* or 100% */
-    letter-spacing: 0.08em;
-    color: #2E2E2E;
-}
-
 .stoimost {
     position: absolute;
     width: 1536px;
@@ -408,18 +323,13 @@ h3 {
     top: 1080px;
 }
 
-.raschet {
+.get__price__text {
     position: absolute;
-    width: 787px;
-    height: 45px;
-    left: 87px;
-    top: 43px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 45px;
-/* identical to box height, or 150% */
+    line-height: 150%;
     letter-spacing: 0.08em;
     color: #2E2E2E;
 }
@@ -1555,8 +1465,8 @@ color: #2E2E2E;
         opacity: 1;
         transform: translateZ(0);
     }
-}}
 }
+
 
 @-webkit-keyframes fadeInLeft {
   0% {
