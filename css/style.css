@@ -1,27 +1,6 @@
-::-webkit-scrollbar {
-    width: 8px; 
-    height: 8px;
-    background-color: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #843465;
-    border-radius: 9em;
-    box-shadow: inset 1px 1px 10px #000;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #000;
-}
-
 * {
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #2E2E2E;
 }
 
 @font-face {
@@ -59,26 +38,51 @@ body {
     width: 100%;
     scrollbar-color: #000 #fff;
     scrollbar-width: 24px;
+    text-align: left;
+    background-repeat: repeat-x, repeat;
+    background-size: initial;
 }
 
-.body__block {
+a {
+    text-decoration: none;
+    color: #2E2E2E;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #843465;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+}
+
+main {
     width: 82vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+      "first__block__textarea first__block__textarea first__block__textarea first__block__textarea"
+      "about about sidebar sidebar"
+      "contact contact sidebar sidebar"
+      "footer footer footer footer";
+    gap: 2.5rem;
 }
 
 .logo {
-    position: absolute;
     width: 229px;
     height: 126px;
-    left: 74px;
-    top: 83px;
 }
 
-.menu ul {
-    position: absolute;
-    width: 285px;
-    height: 389px;
-    left: 41px;
-    top: 432px;
+nav ul {
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
@@ -87,6 +91,7 @@ body {
     text-align: right;
     letter-spacing: 0.12em;
     color: #2E2E2E;
+    padding: 2em 1.5em 2.5em 1.5em;
 }
 
 .transition-translate {
@@ -100,27 +105,23 @@ body {
     right: 5%;
 }
 
-.menu ul li {
+nav ul li {
     list-style-type: none;
 }
 
 .menu__header {
-    position: absolute;
-    width: 267px;
-    height: 150px;
-    left: 61px;
-    top: 247px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 2em;
     line-height: 35px;
     text-align: right;
     letter-spacing: 0.12em;
     color: #2E2E2E;
+    padding: 1em 0.5em 0em 0em;
 }
 
-.menu {
+nav {
     position: fixed!important;
     width: 18vw;
     height: 100%;
@@ -131,8 +132,8 @@ body {
     z-index: 10;
 }
 
-.menu__list ul {
-    margin-right: 300px;
+.menu__list {
+    padding: 5em 1em 2.5em 25px;
 }
 
 .fade__first__line {
@@ -169,18 +170,18 @@ body {
 
 .fade__fifth__line {
     animation: fadeIn ease 2.2s;
-  -webkit-animation: fadeIn ease 2.2s;
-  -moz-animation: fadeIn ease 2.2s;
-  -o-animation: fadeIn ease 2.2s;
-  -ms-animation: fadeIn ease 2.2s;
+    -webkit-animation: fadeIn ease 2.2s;
+    -moz-animation: fadeIn ease 2.2s;
+    -o-animation: fadeIn ease 2.2s;
+    -ms-animation: fadeIn ease 2.2s;
 }
 
 .fade__sixth__line {
     animation: fadeIn ease 2.5s;
-  -webkit-animation: fadeIn ease 2.5s;
-  -moz-animation: fadeIn ease 2.5s;
-  -o-animation: fadeIn ease 2.5s;
-  -ms-animation: fadeIn ease 2.5s;
+    -webkit-animation: fadeIn ease 2.5s;
+    -moz-animation: fadeIn ease 2.5s;
+    -o-animation: fadeIn ease 2.5s;
+    -ms-animation: fadeIn ease 2.5s;
 }
 
 .fade__seventh__line {
@@ -196,7 +197,6 @@ body {
     height: 100vh;
     top: 0px;
     left: 0;
-    display: inline-block;
 }
 
 .first__block__img{
@@ -205,6 +205,7 @@ body {
     left: 0px;
     top: 0px;
     float: left;
+    grid-area: first__block__img;
 }
 
 .first__block__img img{
@@ -215,45 +216,41 @@ body {
 .first__block__textarea {
     width: 50%;
     height: 100%;
-    background:#FFF;
-    margin-top: 0;
+    background:rgba(46, 46, 46, 0.07);
     z-index: 9;
     float: left;
+    grid-area: first__block__textarea;
 }
 
 .first__block__text {
-    margin-top: 55%;
+    margin-top: 43vh;
 }
 
 .first__block__text h2 {
-    padding: 0px 0px 130px 25px;
+    padding: 0px 0px 2.5em 25px;
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 3em;
     line-height: 142%;
     letter-spacing: 0.1em;
     color: #2E2E2E;
 }
 
 .first__block__text h3 {
-    padding: 0px 0px 0px 25px;
-    padding-right: 25px;
+    padding: 0px 0px 0em 25px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 2em;
     line-height: 100%;
     letter-spacing: 0.08em;
     color: #2E2E2E;
 }
 
-.menu .btn {
-    position: absolute;
+nav button {
     width: 264px;
     height: 52px;
-    left: calc(50% - 264px/2);
-    top: 765px;
     color: #fff;
     background: #2E2E2E;
     border: 2px solid #f7f7f7;
@@ -262,54 +259,32 @@ body {
     overflow: hidden;
     -webkit-transition: .3s;
     transition: .3s;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.menu .btn:after {
-  position: absolute;
-  -webkit-transition: .3s;
-  transition: .3s;
-  content: '';
-  width: 0;
-  left: 50%;
-  bottom: 0;
-  height: 3px;
-  background: #fff;
+nav button:after {
+    position: absolute;
+    -webkit-transition: .3s;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #fff;
 }
 
-.menu .btn:hover {
-  cursor: pointer;
-}
-.menu .btn:hover:after {
-  width: 100%;
-  left: 0;
-}
-
-.btn:after {
-  position: absolute;
-  -webkit-transition: .3s;
-  transition: .3s;
-  content: '';
-  width: 0;
-  left: 50%;
-  bottom: 0;
-  height: 3px;
-  background: #fff;
-}
-
-.btn:hover {
+nav button:hover {
     cursor: pointer;
 }
-.btn:hover:after {
+nav button:hover:after {
     width: 100%;
     left: 0;
 }
 
-.menu .btn a {
-    position: absolute;
-    width: 185px;
-    height: 58px;
-    left: calc(50% - 185px/2 - 0.5px);
-    top: calc(50% - 58px/2 + 14px);
+nav button a {
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
@@ -319,16 +294,7 @@ body {
     color: #FFFFFF;
 }
 
-.stoimost {
-    position: absolute;
-    width: 1536px;
-    height: 183px;
-    right: 384px;
-    top: 1080px;
-}
-
 .get__price__block {
-    background: #000;
     height: 18vh;
     width: 100%;
     display: flex;
@@ -344,8 +310,8 @@ body {
     line-height: 150%;
     letter-spacing: 0.08em;
     color: #2E2E2E;
-    width: 50%;
     float: left;
+    padding: 0em 0em 0em 1em;
 }
 
 .get__price__button__block {
@@ -404,6 +370,7 @@ body {
 
 .gallery__block {
     width: 100%;
+    height: 100%;
 }
 
 .first__column__images,
@@ -412,8 +379,14 @@ body {
     float: left;
 }
 
+.second__column__images__without__float {
+    width: 50%;
+    float: none;
+}
+
 .first__column__images img,
-.second__column__images img {
+.second__column__images img,
+.second__column__images__without__float img{
     padding: 10px 0px 10px 0px;
 }
 
@@ -425,7 +398,9 @@ body {
 .house__size__block {
     background: red;
     width: 100%;
-    height: 10px;
+    height: 50vh;
+    overflow: auto;
+    display: none;
 }
 
 .house__size__block h2 {
@@ -437,18 +412,6 @@ body {
     letter-spacing: 0.12em;
     color: #2E2E2E;
     padding: 20px 0px 20px 20px;
-}
-
-.house__size__block h4 {
-    font-family: FuturaBookC;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 0.12em;
-    color: #2E2E2E;
-    padding: 20px 0px 20px 20px;
-    float: left;
 }
 
 .house__size__block h3 {
@@ -468,20 +431,29 @@ body {
     float: left;
 }
 
-.house__size__block .btn {
-    position: absolute;
-    width: 410px;
-    height: 72px;
-    right: 186px;
-    top: 373px;
+.house__size__block h4 {
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.12em;
+    color: #2E2E2E;
+    padding: 20px 0px 20px 20px;
+    float: left;
 }
 
-.house__size__block .btn a {
-    position: absolute;
-    width: 182px;
-    height: 90px;
-    left: calc(50% - 182px/2 + 6px);
-    top: calc(50% - 90px/2 + 23px);
+.house__size__block button {
+    width: 410px;
+    height: 72px;
+    background: #2E2E2E;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    border: none;
+}
+
+.house__size__block button a {
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
@@ -491,20 +463,13 @@ body {
     color: #FFFFFF;
 }
 
-.priceblock {
-    position: absolute;
-    width: 1536px;
-    height: 1080px;
-    left: 0px;
-    top: 3972px;
+.price__block__text,
+.price__image__block {
+    width: 50%;
+    float: left;
 }
 
-.priceblock h1 {
-    position: absolute;
-    width: 437px;
-    height: 50px;
-    left: 90px;
-    top: 0;
+.price__block h1 {
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
@@ -516,129 +481,45 @@ body {
     border-bottom: 2px solid #2E2E2E;
 }
 
-.priceglr {
-    position: absolute;
-    width: 753px;
-    height: 1080px;
-    left: 783px;
-    top: 100px;
-}
-
-.priceblock1 {
-    position: absolute;
-    width: 663px;
-    height: 170px;
-    left: 90px;
-    top: 100px;
-    background: rgba(46, 46, 46, 0.07);
-}
-
-.priceblock1 h2, .priceblock4 h2, .priceblock5 h2, .priceblock6 h2 {
-    position: absolute;
-    width: 600px;
-    height: 74px;
-    left: 34px;
-    top: 71px;
+.price__block__one h2,
+.price__block__two h2,
+.price__block__three h2, 
+.price__block__four h2, 
+.price__block__five h2, 
+.price__block__six h2 {
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
-    line-height: 37px;
-/* or 94% */
+    line-height: 94%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
+    padding: 50px;
 }
 
-.priceblock2 h2, .priceblock3 h2 {
-    position: absolute;
-    width: 560px;
-    height: 64px;
-    left: 31px;
-    top: 57px;
-    font-family: FuturaMediumC;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 35px;
-/* or 87% */
-    letter-spacing: 0.12em;
-    color: #2E2E2E;
-}
-
-.priceblock1 a, .priceblock2 a, .priceblock3 a, .priceblock4 a, .priceblock5 a {
-    position: absolute;
-    width: 196px;
-    height: 43px;
-    left: 460px;
-    top: 127px;
+.price__block__one a, 
+.price__block__two a, 
+.price__block__three a, 
+.price__block__four a, 
+.price__block__five a,
+.price__block__six a {
     font-family: FuturaLightC;
     font-style: normal;
     font-weight: 300;
     font-size: 25px;
-    line-height: 37px;
-/* identical to box height, or 150% */
+    line-height: 150%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
+
 }
 
-.priceblock6 a {
-    position: absolute;
-    width: 196px;
-    height: 43px;
-    left: 460px;
-    top: 108px;
-    font-family: FuturaLightC;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 37px;
-/* identical to box height, or 150% */
-    letter-spacing: 0.12em;
-    color: #2E2E2E;
-}
-
-.priceblock2 {
-    position: absolute;
-    width: 663px;
+.price__block__one,
+.price__block__two,
+.price__block__three,
+.price__block__four,
+.price__block__five,
+.price__block__six {
     height: 170px;
-    left: 90px;
-    top: 285px;
-    background: rgba(46, 46, 46, 0.07);
-}
-
-.priceblock3 {
-    position: absolute;
-    width: 663px;
-    height: 170px;
-    left: 90px;
-    top: 470px;
-    background: rgba(46, 46, 46, 0.07);
-}
-
-.priceblock4 {
-    position: absolute;
-    width: 663px;
-    height: 170px;
-    left: 90px;
-    top: 655px;
-    background: rgba(0, 0, 0, 0.07);
-}
-
-.priceblock5 {
-    position: absolute;
-    width: 663px;
-    height: 170px;
-    left: 90px;
-    top: 840px;
-    background: rgba(46, 46, 46, 0.07);
-}
-
-.priceblock6 {
-    position: absolute;
-    width: 663px;
-    height: 155px;
-    left: 90px;
-    top: 1025px;
     background: rgba(46, 46, 46, 0.07);
 }
 
@@ -759,104 +640,60 @@ body {
     color: #2E2E2E;
 }
 
-.buroblock {
-    position: absolute;
-    width: 768px;
-    height: 1080px;
-    left: 0px;
-    top: 7237px;
+.about__buro__block,
+.about__buro__image__block {
+    width: 50%;
+    float: left;
     background: #2E2E2E;
 }
 
-.buroimgblock {
-    position: absolute;
-    width: 768px;
-    height: 1080px;
-    left: 768px;
-    top: 7237px;
-}
-
-.buroblock h2 {
-    position: absolute;
-    width: 222px;
-    height: 50px;
-    left: 87px;
-    top: 78px;
+.about__buro__block h2 {
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    line-height: 50px;
-/* or 100% */
+    line-height: 100%;
     letter-spacing: 0.12em;
     color: #FFFFFF;
     text-decoration: none;
     border-bottom: 2px solid #FFF;
 }
 
-.buroblock p {
-    position: absolute;
-    width: 559px;
-    height: 607px;
-    left: 90px;
-    top: 182px;
+.about__buro__block p {
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
-    line-height: 30px;
-/* or 120% */
+    line-height: 120%;
     color: #FFFFFF;
 }
 
-.buroimgblock2 {
-    position: absolute;
-    width: 768px;
-    height: 1080px;
-    left: 0px;
-    top: 8317px;
+.buro__faces__block,
+.buro__faces__image__block {
+    width: 50%;
+    float: left;
+    background: #2E2E2E;
 }
 
-.buroblock2 {
-    position: absolute;
-    width: 768px;
-    height: 1080px;
-    left: 768px;
-    top: 8317px;
-    background: rgba(0, 0, 0, 0.04);
-}
-
-.buroblock2 h2 {
-    position: absolute;
-    width: 553px;
-    height: 50px;
-    left: 96px;
-    top: 78px;
+.buro__faces__block h2 {
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
-    font-size: 49px;
-    line-height: 50px;
-/* identical to box height, or 100% */
+    font-size: 48px;
+    line-height: 100%;
     letter-spacing: 0.12em;
-    color: #2E2E2E;
+    color: #FFFFFF;
     text-decoration: none;
-    border-bottom: 2px solid #2E2E2E;
+    border-bottom: 2px solid #FFF;
 }
 
-.buroblock2 p {
-    position: absolute;
-    width: 589px;
-    height: 842px;
-    left: 89px;
-    top: 173px;
+.buro__faces__block p {
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
-    line-height: 30px;
-/* or 120% */
-    color: #2E2E2E;
+    line-height: 120%;
+    color: #FFFFFF;
 }
 
 .faces {
