@@ -64,17 +64,13 @@ a {
     background-color: #000;
 }
 
+@media (min-width: 1400px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%!important;
+}
+
 main {
     width: 82vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-    grid-template-areas:
-      "first__block__textarea first__block__textarea first__block__textarea first__block__textarea"
-      "about about sidebar sidebar"
-      "contact contact sidebar sidebar"
-      "footer footer footer footer";
-    gap: 2.5rem;
 }
 
 .logo {
@@ -195,17 +191,13 @@ nav {
 .first__block {
     width: 100%;
     height: 100vh;
-    top: 0px;
-    left: 0;
 }
 
 .first__block__img{
-    width: 50%;
     height: 100%;
     left: 0px;
     top: 0px;
     float: left;
-    grid-area: first__block__img;
 }
 
 .first__block__img img{
@@ -214,7 +206,6 @@ nav {
 }
 
 .first__block__textarea {
-    width: 50%;
     height: 100%;
     background:rgba(46, 46, 46, 0.07);
     z-index: 9;
@@ -295,11 +286,11 @@ nav button a {
 }
 
 .get__price__block {
-    height: 18vh;
     width: 100%;
     display: flex;
 	justify-content: center;
 	align-items: center;
+    padding: 1.5em 0em 1.5em 1em;
 }
 
 .get__price__text__block h1{
@@ -311,7 +302,6 @@ nav button a {
     letter-spacing: 0.08em;
     color: #2E2E2E;
     float: left;
-    padding: 0em 0em 0em 1em;
 }
 
 .get__price__button__block {
@@ -463,10 +453,8 @@ nav button a {
     color: #FFFFFF;
 }
 
-.price__block__text,
-.price__image__block {
-    width: 50%;
-    float: left;
+.price__block__text{
+
 }
 
 .price__block h1 {
@@ -521,6 +509,7 @@ nav button a {
 .price__block__six {
     height: 170px;
     background: rgba(46, 46, 46, 0.07);
+    margin: auto;
 }
 
 .pricevariationblock {
@@ -642,7 +631,6 @@ nav button a {
 
 .about__buro__block,
 .about__buro__image__block {
-    width: 50%;
     float: left;
     background: #2E2E2E;
 }
@@ -697,117 +685,64 @@ nav button a {
 }
 
 .faces {
-    position: absolute;
-    width: 1536px;
-    height: 2160px;
-    left: 0px;
-    top: 9589px;
     background: rgba(0, 0, 0, 0.04);
 }
 
 .facesimgblock {
-    position: absolute;
-    width: 768px;
-    height: 1080px;
-    left: 0px;
-    top: 30px;
     background: #2E2E2E;
 }
 
-.facesblock {
-    position: absolute;
-    width: 768px;
-    height: 1080px;
-    left: 768px;
-    top: 30px;
-}
-
 .facesblock p {
-    position: absolute;
-    width: 674px;
-    height: 207px;
-    left: 28px;
-    top: 86px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 37px;
-/* or 125% */
+    line-height: 125%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
 
 .facesblock h2 {
-    position: absolute;
-    width: 256px;
-    height: 49px;
-    left: 15px;
-    top: 529px;
     font-family: FuturaLightC;
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
-    line-height: 65px;
-/* or 217% */
+    line-height: 217%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
 
 .facesblock h3 {
-    position: absolute;
-    width: 443px;
-    height: 111px;
-    left: 15px;
-    top: 587px;
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
-    line-height: 50px;
-/* or 100% */
+    line-height: 100%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
 
 .facesblock h4 {
-    position: absolute;
-    width: 367px;
-    height: 302px;
-    left: 28px;
-    top: 699px;
     font-family: FuturaLightC;
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
-    line-height: 65px;
-/* or 217% */
+    line-height: 217%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
 
 .facesblock .date {
-    position: absolute;
-    width: 147px;
-    height: 223px;
-    left: 0px;
-    top: 48px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
-    line-height: 40px;
-/* identical to box height, or 160% */
+    line-height: 160%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
 
 .facesblock .prize {
-    position: absolute;
-    width: 394px;
-    height: 234px;
-    left: 130px;
-    top: 48px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
@@ -819,45 +754,28 @@ nav button a {
 }
 
 .facesblock2 .date {
-    position: absolute;
-    width: 147px;
-    height: 223px;
-    left: 0px;
-    top: 48px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
-    line-height: 40px;
-/* identical to box height, or 160% */
+    line-height: 160%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
     text-align: right;
 }
 
 .facesblock2 .prize {
-    position: absolute;
-    width: 394px;
-    height: 234px;
-    left: 130px;
-    top: 48px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
-    line-height: 40px;
-/* identical to box height, or 160% */
+    line-height: 160%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
     text-align: right;
 }
 
 .facesblock2 {
-    position: absolute;
-    width: 768px;
-    height: 1080px;
-    left: 0px;
-    top: 1110px;
     background: rgba(0, 0, 0, 0.04);
 }
 
@@ -870,68 +788,44 @@ nav button a {
 }
 
 .facesblock2 p {
-    position: absolute;
-    width: 674px;
-    height: 207px;
-    left: 28px;
-    top: 86px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 37px;
-/* or 125% */
+    line-height: 125%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
     text-align: right;
 }
 
 .facesblock2 h2 {
-    position: absolute;
-    width: 256px;
-    height: 49px;
-    left: 274px;
-    top: 529px;
     font-family: FuturaLightC;
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
-    line-height: 65px;
-/* or 217% */
+    line-height: 217%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
     text-align: right;
 }
 
 .facesblock2 h3 {
-    position: absolute;
-    width: 443px;
-    height: 111px;
-    left: 274px;
-    top: 587px;
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
-    line-height: 50px;
-/* or 100% */
+    line-height: 100%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
     text-align: right;
 }
 
 .facesblock2 h4 {
-    position: absolute;
-    width: 367px;
-    height: 56px;
-    left: 274px;
-    top: 699px;
     font-family: FuturaLightC;
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
-    line-height: 65px;
-/* or 217% */
+    line-height: 217%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
 }
@@ -1254,7 +1148,17 @@ color: #2E2E2E;
   }
 }
 
-
+.winner__block {
+    background: #2E2E2E;
+    color: #FFF;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 125%;
+    letter-spacing: 0.12em;
+    padding: 2em 0px 2em 0px;
+}
 
 .bttn-arrow span {
   display: inline-block;
@@ -1320,4 +1224,45 @@ line-height: 45px;
 letter-spacing: 0.12em;
 
 color: #000000;
+}
+
+footer {
+    height: 50vh;
+
+}
+
+.footerinfo {
+    background: #2E2E2E;
+    line-height: 117%;
+    letter-spacing: 0.12em;
+    color: #FFF;
+}
+
+.footerinfo h1 {
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 117%;
+    letter-spacing: 0.12em;
+    font-size: 30px;
+}
+
+.footerinfo p {
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 117%;
+    letter-spacing: 0.12em;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.footerinfo a {
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
 }
