@@ -1322,8 +1322,14 @@ footer p {
 	align-items: center;
 }
 
+.text__to__next__work__block ul {
+    list-style-type: none;
+    padding: 1em 0px 0px 10em;
+}
+
 .image__to__next__work__block {
-    width: 100%;
+    height: 100%;
+    position: relative;
 }
  
 footer {
