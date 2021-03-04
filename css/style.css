@@ -75,7 +75,7 @@ a {
 }
 
 main {
-    width: 82vw;
+    width: 80vw;
 }
 
 .logo {
@@ -93,6 +93,7 @@ nav ul {
     text-align: right;
     letter-spacing: 0.12em;
     color: #2E2E2E;
+    padding: 0px 0px 2em 0px;
 }
 
 .transition-translate {
@@ -119,7 +120,7 @@ nav ul li {
     text-align: right;
     letter-spacing: 0.12em;
     color: #2E2E2E;
-    padding: 1.5em 0em 1.5em 0em;
+    padding: 1.5em 0em 3.5em 0em;
 }
 
 @media screen and (min-width: 991px) {
@@ -161,6 +162,14 @@ nav ul li {
     }
     
     .about__buro__block h2::after {
+        width: 50%;
+    }
+
+    .portfolio__buro__block h2 {
+        font-size: 2em;
+    }
+    
+    .portfolio__buro__block h2::after {
         width: 50%;
     }
     
@@ -266,7 +275,7 @@ nav ul li {
     }
 
     nav button a {
-        font-size: 0.9em;
+        font-size: 25px;
     }
 
     .first__block__text h2 {
@@ -282,6 +291,14 @@ nav ul li {
     }
     
     .about__buro__block h2::after {
+        width: 75%;
+    }
+
+    .portfolio__buro__block h2 {
+        font-size: 48px;
+    }
+    
+    .portfolio__buro__block h2::after {
         width: 75%;
     }
     
@@ -374,7 +391,7 @@ nav ul li {
 
 nav {
     position: fixed!important;
-    width: 18vw;
+    width: 20vw;
     height: 100%;
     right: 0px;
     top: 0px;
@@ -389,7 +406,6 @@ nav {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    padding: 0em 5.5em 2.5em 1em;
 }
 
 .fade__first__line {
@@ -487,6 +503,10 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+}
+
+.ddd {
+    max-height: 100vh;
 }
 
 .first__block__text h2 {
@@ -798,7 +818,31 @@ nav a {
     bottom: 0;
     left: 0;
     height: 2px;
-    background-color: #fff;
+    background-color: #FFF;
+    margin-left: 1.5em;
+    padding: 0em 0em 0em 1.5em;
+}
+
+.portfolio__buro__block h2 {
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.12em;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 1.5em 0em 0em 1.5em;
+}
+
+.portfolio__buro__block h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #000;
     margin-left: 1.5em;
     padding: 0em 0em 0em 1.5em;
 }
@@ -1309,6 +1353,12 @@ footer p {
 	align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+    .col-md-6 {
+    width: 100%;
+ }
+}
+
 .text__to__next__work__block span {
     font-family: FuturaBookC;
     font-style: normal;
@@ -1382,7 +1432,6 @@ footer {
 
 .gallery__hover__effect {
     position: relative;
-    margin-bottom: 30px;
     overflow: hidden;
   }
   
