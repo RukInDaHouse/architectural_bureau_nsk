@@ -1310,6 +1310,10 @@ nav a {
     bottom: 5%;
 }
 
+.footer__info__list a {
+    color: #FFF!important;
+}
+
 footer ul {
     list-style-type: none;
     padding: 0px 0px 0px 30px;
