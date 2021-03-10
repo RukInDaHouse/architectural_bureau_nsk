@@ -3,23 +3,6 @@
     padding: 0;
 }
 
-.swiper-container {
-    width: 100%;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    color: #000!important;
-}
-
-.swiper-pagination-bullet-active {
-    background:#000!important;
-}
-
-.swiper-wrapper {
-    display: flex;
-    align-items: center;
-}
-
 @font-face {
     font-family: "FuturaMediumC";
     src: url("../fonts/FuturaMediumC.ttf") format("truetype");
@@ -73,6 +56,10 @@ img {
 
 a {
     text-decoration: none!important;
+}
+
+a:hover {
+    color:#000!important;
 }
 
 ::-webkit-scrollbar {
@@ -139,15 +126,31 @@ nav ul li {
     color: #2E2E2E;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 700px) {
     .menu__header {
         font-size: 1.3em;
         padding: 1.5em 0em 1.2em 0em;
     }
 
-    nav ul {
-        padding: 0px 50px 1.2em 50px;
-        font-size: 1.5em;
+    .price__info__block {
+        margin-bottom: 40px;
+
+    }
+
+    html {
+        width: 100vw;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .price__block__head h1 {
+        font-size: 1.8em!important; 
     }
 
     .container, 
@@ -161,6 +164,172 @@ nav ul li {
 
     .first__block__text h2 {
         font-size: 2.2em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2.5em 0px 2.5em 0px;
+    }
+
+    .first__block__text h3 {
+        font-size: 1.7em;
+    }
+
+    nav button {
+        width: 190px;
+        height: 52px;
+    }
+
+    nav button a {
+        font-size: 0.6em;
+    }
+
+    .about__buro__block h2 {
+        font-size: 2em;
+    }
+    
+    .about__buro__block h2::after {
+        width: 100%;
+    }
+
+    .portfolio__buro__block h2 {
+        font-size: 2em;
+    }
+    
+    .portfolio__buro__block h2::after {
+        width: 100%;
+    }
+    
+    .about__buro__block p {
+        font-size: 1.5em;
+    }
+    
+    .about__buro__block h2 {
+        font-size: 2em;
+    }
+    
+    .about__buro__block h2::after {
+        width: 100%;
+    }
+    
+    .about__buro__block p {
+        font-size: 1.5em;
+    }
+
+    .facesblock p {
+        font-size: 1.5em;
+    }
+    
+    .facesblock h2 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock h3 {
+        font-size: 3em;
+    }
+    
+    .facesblock h4 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock .date {
+        font-size: 1.1em;
+    }
+    
+    .facesblock .prize {
+        font-size: 1.1em;
+    }
+    
+    .second__facesblock .date {
+        font-size: 1.1em;
+    }
+    
+    .second__facesblock .prize {
+        font-size: 1.1em;
+    }
+    
+    .second__facesblock p {
+        font-size: 1.5em;
+    }
+    
+    .second__facesblock h2 {
+        font-size: 1.3em;
+    }
+    
+    .second__facesblock h3 {
+        font-size: 3em;
+    }
+    
+    .second__facesblock h4 {
+        font-size: 1.3em;
+    }
+
+    .condition__block span:nth-child(1) {
+        font-size: 1.5em;
+    }
+    
+    .condition__block span:nth-child(2) {
+        font-size: 1.5em;
+    }
+
+    .condition__block button {
+        font-size: 1.5em; 
+        width: 200px;
+        height: 51px;
+    }
+
+    .price__info__block h2 {
+        font-size: 1.7em;
+    }
+
+    .price__info__block span {
+        font-size: 0.7em;
+    }
+
+    .panel ul li {
+        font-size: 1.3em;
+    }
+
+    .second__about__buro__block p {
+        font-size: 1.3em;
+    }
+
+    .about__buro__block p {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .menu__header {
+        font-size: 1.3em;
+        padding: 1.5em 0em 1.2em 0em;
+    }
+
+    .first__block__text {
+        margin-top: 43vh;
+    }
+
+    nav ul {
+        padding: 0px 50px 1.2em 50px;
+        font-size: 1.5em;
+    }
+
+    .price__block h1 {
+        font-size: 2em;
+    }
+
+    .container, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl, 
+    .container-xxl {
+        max-width: 100%!important;
+    }
+
+    .first__block__text h2 {
+        font-size: 2.2em;
+        padding: 0px 0px 2.5em 25px;
     }
     
     .first__block__text h3 {
@@ -297,6 +466,14 @@ nav ul li {
         padding: 1.5em 0em 3.5em 0em;
     }
 
+    .price__block h1 {
+        font-size: 48px;;
+    }
+
+    .first__block__text {
+        margin-top: 43vh;
+    }
+
     nav ul {
         padding: 0px 0px 1.2em 0px;
     }
@@ -320,6 +497,7 @@ nav ul li {
 
     .first__block__text h2 {
         font-size: 3em;
+        padding: 0px 0px 2.5em 25px;
     }
     
     .first__block__text h3 {
@@ -536,10 +714,6 @@ nav {
     float: left;
 }
 
-.first__block__text {
-    margin-top: 43vh;
-}
-
 .price__block__text {
     display: grid;
     grid-template-columns: 1fr;
@@ -548,11 +722,10 @@ nav {
 }
 
 .price__block__head {
-    padding: 0px 3em 0px 3em!important;
+    padding: 3em 3em 3em 3em!important;
 }
 
 .first__block__text h2 {
-    padding: 0px 0px 2.5em 25px;
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
@@ -753,7 +926,6 @@ nav a {
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
-    font-size: 49px;
     line-height: 100%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
@@ -796,6 +968,10 @@ nav a {
     position: relative
 }
 
+.about__buro__textarea {
+    padding: 0em 3em 0em 3em;
+}
+
 @media screen and (min-width: 991px) {
     .desktopnone {
         display: none;
@@ -830,7 +1006,7 @@ nav a {
     text-decoration: none;
     margin-bottom: 20px;
     position: relative;
-    padding: 1.5em 0em 0em 1.5em;
+    padding: 1.5em 0em 0em 0em;
     display: inline-block;
 }
 
@@ -841,8 +1017,6 @@ nav a {
     left: 0;
     height: 2px;
     background-color: #FFF;
-    margin-left: 1.5em;
-    padding: 0em 0em 0em 1.5em;
 }
 
 .portfolio__buro__block h2 {
@@ -855,7 +1029,7 @@ nav a {
     text-decoration: none;
     margin-bottom: 20px;
     position: relative;
-    padding: 1.5em 0em 0em 1.5em;
+    padding: 1.5em 0em 0em 0em;
     display: inline-block;
 }
 
@@ -866,7 +1040,6 @@ nav a {
     left: 0;
     height: 2px;
     background-color: #000;
-    margin-left: 1.5em;
     padding: 0em 0em 0em 1.5em;
 }
 
@@ -876,7 +1049,7 @@ nav a {
     font-weight: normal;
     line-height: 120%;
     color: #FFFFFF;
-    padding: 1.5em 0em 0em 2.5em;
+    padding: 1.5em 0em 0em 0em;
 }
 
 .second__about__buro__block {
@@ -893,7 +1066,7 @@ nav a {
     text-decoration: none;
     margin-bottom: 20px;
     position: relative;
-    padding: 1.5em 0em 0em 1.5em;
+    padding: 1.5em 0em 0em 0em;
     display: inline-block;
 }
 
@@ -904,11 +1077,8 @@ nav a {
     left: 0;
     height: 2px;
     background-color: #000;
-    margin-left: 1.5em;
-    padding: 0em 0em 0em 1.5em;
     display: inline-block;
-
-  }
+}
 
 .second__about__buro__block p {
     font-family: FuturaBookC;
@@ -916,7 +1086,7 @@ nav a {
     font-weight: normal;
     line-height: 120%;
     color: #000;
-    padding: 1.5em 2.5em 0em 2.5em;
+    padding: 1.5em 0em 0em 0em;
 }
 
 .conditions__block {
@@ -1567,4 +1737,21 @@ footer {
 
 .portfolio__buro__block h2 {
     display: inline-block;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000!important;
+}
+
+.swiper-pagination-bullet-active {
+    background:#000!important;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
 }
