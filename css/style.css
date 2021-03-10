@@ -15,6 +15,11 @@
     background:#000!important;
 }
 
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 @font-face {
     font-family: "FuturaMediumC";
     src: url("../fonts/FuturaMediumC.ttf") format("truetype");
