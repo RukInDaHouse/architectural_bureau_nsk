@@ -76,7 +76,8 @@
 								</div>
 								<div class="swiper-button-next"></div>
 								<div class="swiper-button-prev"></div>
-							  </div>
+								<div class="swiper-pagination"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -139,7 +140,6 @@
 			</section>
 
 			<section class="arrow__to__next__work__block">
-				<a href="./index.html" class="link">о нас</a>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 mx-auto text__to__next__work__block">
@@ -149,6 +149,8 @@
 						</div>
 
 						<div class="col-md-6 mx-auto image__to__next__work__block">
+							<img src="./img/1/2.jpg" class="img-fluid" alt="Responsive image">
+
 						</div>              
 					</div>       
 				</div>
@@ -192,13 +194,15 @@
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
-		  loop: true,
+		  pagination: {
+			el: '.swiper-pagination',
+		  },
 		  navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		  },
 		});
-	</script>
+	  </script>
 </body>
 </html>
 </html>
