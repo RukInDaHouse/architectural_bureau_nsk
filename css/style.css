@@ -134,7 +134,22 @@ nav ul li {
 
     .price__info__block {
         margin-bottom: 40px;
+    }
 
+    .price__info__block h2 {
+        font-size: 1.2em;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        font-size: 10px;
+    }
+
+    .gallery__hover__effect__text ul li:nth-child(2n) {
+        font-size: 15px;
+    }
+    
+    .gallery__hover__effect__text ul li:nth-child(2n+1) {
+        font-size: 15px;
     }
 
     html {
@@ -225,7 +240,7 @@ nav ul li {
     }
     
     .facesblock h3 {
-        font-size: 3em;
+        font-size: 2em;
     }
     
     .facesblock h4 {
@@ -257,7 +272,7 @@ nav ul li {
     }
     
     .second__facesblock h3 {
-        font-size: 3em;
+        font-size: 2em;
     }
     
     .second__facesblock h4 {
@@ -276,10 +291,6 @@ nav ul li {
         font-size: 1.5em; 
         width: 200px;
         height: 51px;
-    }
-
-    .price__info__block h2 {
-        font-size: 1.7em;
     }
 
     .price__info__block span {
@@ -316,6 +327,18 @@ nav ul li {
 
     .price__block h1 {
         font-size: 2em;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        font-size: 16px;
+    }
+
+    .gallery__hover__effect__text ul li:nth-child(2n) {
+        font-size: 25px;
+    }
+    
+    .gallery__hover__effect__text ul li:nth-child(2n+1) {
+        font-size: 25px;
     }
 
     .container, 
@@ -464,6 +487,18 @@ nav ul li {
     .menu__header {
         font-size: 1.9em;
         padding: 1.5em 0em 3.5em 0em;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        font-size: 16px;
+    }
+
+    .gallery__hover__effect__text ul li:nth-child(2n) {
+        font-size: 25px;
+    }
+    
+    .gallery__hover__effect__text ul li:nth-child(2n+1) {
+        font-size: 25px; 
     }
 
     .price__block h1 {
@@ -952,7 +987,6 @@ nav a {
     font-family: FuturaLightC;
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
     line-height: 150%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
@@ -1670,7 +1704,6 @@ footer {
   
 .gallery__hover__effect .gallery__hover__effect__text ul {
     color: #FFF;
-    font-size: 16px;
     text-align: left;
     position: absolute;
     bottom: 0;
@@ -1682,7 +1715,6 @@ footer {
     font-family: FuturaMediumC;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
     line-height: 150%;
     letter-spacing: 0.12em;
 }
@@ -1691,7 +1723,6 @@ footer {
     font-family: FuturaLightC;
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
     line-height: 150%;   
     letter-spacing: 0.12em;  
 }
