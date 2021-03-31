@@ -11,14 +11,18 @@
 	</head>
 
 	<body>
-		<div class="feedback__form">
-			<a href="#close" title="Закрыть" class="close">&#8594;</a>
-			<div id="openModal" class="form__window">
+		<div class="feedback__form" id="modal">
+			<a href="#close" title="Закрыть" class="close" id="modal__arrow">&#8594;</a>
+			<div class="form__window">
 				<form role="form" method="post" action="mail.php">
-					<input type="text" class="form__field" id="name" pattern="^[А-Яа-яЁё\s]+$" minlength="1" maxlength="18" placeholder="Ваше имя" name="user_name" value="" required>
-					<input type="email" class="form__field" id="email" placeholder="Электронная почта" name="user_email" value="" required>
-					<input type="text" class="form__field" id="name" pattern="[0-9]{6,18}" placeholder="Ваш телефон" name="user_phone" value="" required>				
-					<textarea class="form__field" rows="10" pattern="^[А-Яа-яЁё\s]+$" placeholder="Опишите задачу" name="user_message"></textarea>				
+					<p>Имя</p>
+					<input type="text" class="form__field" id="name" pattern="^[А-Яа-яЁё\s]+$" minlength="1" maxlength="18" placeholder="" name="user_name" value="" required>
+					<p>Email</p>
+					<input type="email" class="form__field" id="email" placeholder="" name="user_email" value="" required>
+					<p>Номер телефона</p>
+					<input type="text" class="form__field" id="name" pattern="[0-9]{6,18}" placeholder="" name="user_phone" value="" required>	
+					<p>Ваше сообщение</p>			
+					<textarea class="form__field" rows="10" pattern="^[А-Яа-яЁё\s]+$" placeholder="" name="user_message"></textarea>				
 					<p>
 						<button class="send__button" id="submit" type="submit" value="SEND">Отправить</button>
 					</p>
@@ -58,7 +62,7 @@
 						</li>
 					</div>
 					<li>
-						<button class="fade__sixth__line">
+						<button class="fade__sixth__line" id="modal__button">
 							<a href="#">Напишите нам</a>
 						</button>
 					</li>

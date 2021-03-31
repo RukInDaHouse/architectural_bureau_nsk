@@ -54,15 +54,27 @@ img {
     margin: 0;
 }
 
+.open__menu {
+    right: 20vw!important;
+}
+
 .feedback__form {
     width: 30vw;
     height: 100vh;
     background: #f0f0f0;
     position: fixed;
-    right: 20vw;
+    right: -20vw;
     top: 0;
     bottom: 0;
     z-index: 9;
+    transition: 0.5s;
+}
+
+.form__window p {
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0px 0px 0px 25px;
 }
 
 .close {

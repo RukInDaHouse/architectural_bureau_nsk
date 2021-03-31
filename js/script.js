@@ -12,3 +12,13 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+document.getElementById("modal__button").addEventListener("click", function() {
+  var modal = document.getElementById("modal");
+      modal.classList.toggle("open__menu");
+});
+
+document.getElementById("modal__arrow").addEventListener("click", function() {
+  var modal = document.getElementById("modal");
+      modal.classList.toggle("open__menu");
+});
