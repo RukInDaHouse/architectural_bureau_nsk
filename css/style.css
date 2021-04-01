@@ -91,6 +91,26 @@ img {
     border: 2px solid #2E2E2E;
 }
 
+.gray__overlay {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 8;
+}
+
+.politic__font {
+    font-family: FuturaMediumC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #A5A5A5;
+    cursor: pointer;
+}
+
 .form__field {
     margin: 0px 0px 50px 0px;
     height: 54px;

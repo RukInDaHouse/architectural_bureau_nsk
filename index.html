@@ -11,6 +11,7 @@
 	</head>
 
 	<body>
+		<div class="" id="gray__overlay"></div>
 		<div class="feedback__form" id="modal">
 			<a href="#close" title="Закрыть" class="close" id="modal__arrow">&#8594;</a>
 			<div class="form__window">
@@ -23,10 +24,9 @@
 					<input type="text" class="form__field" id="name" pattern="[0-9]{6,18}" placeholder="" name="user_phone" value="" required>	
 					<p>Ваше сообщение</p>			
 					<textarea class="form__field" rows="10" pattern="^[А-Яа-яЁё\s]+$" placeholder="" name="user_message"></textarea>				
-					<p>
-						<button class="send__button" id="submit" type="submit" value="SEND">Отправить</button>
-					</p>
-					<p class="text-white-50 politicfont">⃰&nbsp;Нажимая кнопку «Отправить», Вы соглашаетесь с политикой конфиденциальности</p>
+					<button class="send__button" id="submit" type="submit" value="SEND">Отправить</button>
+					<br>
+					<a class="politic__font">⃰&nbsp;Нажимая кнопку «Отправить», Вы соглашаетесь с политикой конфиденциальности</a>
 				</form>
 			</div>
 		</div>
