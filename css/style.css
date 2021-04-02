@@ -1843,8 +1843,23 @@ footer {
     padding-left: 0.5rem;
 }
 
-.gallery__bottom__padding {
+.gallery__row>* {
+    padding-right: 3rem!important;
     padding-bottom: 3rem;
+}
+
+.gallery__row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+.li__padding {
+    margin-top: 50px;
 }
 
 .portfolio__buro__block h2 {
@@ -1866,4 +1881,12 @@ footer {
 .swiper-wrapper {
     display: flex;
     align-items: center;
+}
+
+.main__ul {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    display: block;
+    bottom: auto!important;
 }
