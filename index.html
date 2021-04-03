@@ -11,9 +11,42 @@
 	</head>
 
 	<body>
+		<div id="openModal" class="modalDialog invisible__block">
+			<div>
+				<a id="close__modal" title="Закрыть" class="close">&#215;</a>
+						<form class="form-horizontal" role="form" method="post" action="mail.php">
+			   <h1 class="section-header">Заполните форму</h1>
+			  <div class="form-group">
+				<div class="col-sm-12">
+				  <input type="text" class="form-control" id="name" pattern="^[А-Яа-яЁё\s]+$" minlength="1" maxlength="18" placeholder="Ваше имя" name="user_name" value="" required>
+				</div>
+			  </div>
+		
+					<div class="form-group">
+				<div class="col-sm-12">
+				  <input type="text" class="form-control" id="name" pattern="[0-9]{6,18}" placeholder="Ваш телефон" name="user_phone" value="" required>
+				</div>
+			  </div>
+		
+			  <div class="form-group">
+				<div class="col-sm-12">
+				  <input type="email" class="form-control" id="email" placeholder="Электронная почта" name="user_email" value="" required>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<div class="col-sm-12">
+			  <textarea class="form-control" rows="10" pattern="^[А-Яа-яЁё\s]+$" placeholder="Опишите задачу" name="user_message"></textarea>
+				</div>
+			</div>
+		
+			  <p><button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">Отправить</button></p>
+			  <p class="text-white-50 politicfont">⃰&nbsp;Нажимая кнопку «Отправить», Вы соглашаетесь с политикой конфиденциальности</p>
+			</form>
+			</div>
+		</div>
 		<div class="" id="gray__overlay"></div>
 		<div class="feedback__form" id="modal">
-			<a href="#close" title="Закрыть" class="close" id="modal__arrow">&#8594;</a>
+			<a href="#close" title="Закрыть" class="modal__arrow" id="modal__arrow">&#8594;</a>
 			<div class="form__window">
 				<form role="form" method="post" action="mail.php">
 					<p>Имя</p>
@@ -335,7 +368,7 @@
 							<div class="price__info__block">
 								<h2>Дизайн-проект интерьера</h2>
 								<a href="#">
-									<div class="bttn bttn-arrow">
+									<div class="bttn bttn-arrow invisible__block">
 										<span>Подробнее
 											<svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
@@ -348,7 +381,7 @@
 							<div class="price__info__block">
 								<h2>Ремонтно-отделочные работы</h2>
 								<a href="#">
-									<div class="bttn bttn-arrow">
+									<div class="bttn bttn-arrow invisible__block">
 										<span>Подробнее
 											<svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
@@ -361,7 +394,7 @@
 							<div class="price__info__block">
 								<h2>Инженерное проектирование</h2>
 								<a href="#">
-									<div class="bttn bttn-arrow">
+									<div class="bttn bttn-arrow invisible__block">
 										<span>Подробнее
 											<svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
@@ -374,7 +407,7 @@
 							<div class="price__info__block">
 								<h2>Комплектация интерьеров</h2>
 								<a href="#">
-									<div class="bttn bttn-arrow">
+									<div class="bttn bttn-arrow invisible__block">
 										<span>Подробнее
 											<svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
@@ -387,7 +420,7 @@
 							<div class="price__info__block">
 								<h2>Управление проектом</h2>
 								<a href="#">
-									<div class="bttn bttn-arrow">
+									<div class="bttn bttn-arrow invisible__block">
 										<span>
 											Подробнее
 											<svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -401,7 +434,7 @@
 							<div class="price__info__block">
 								<h2>Авторский надзор</h2>
 								<a href="#">
-									<div class="bttn bttn-arrow">
+									<div class="bttn bttn-arrow invisible__block">
 										<span>Подробнее
 											<svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M27.3536 4.35355C27.5488 4.15829 27.5488 3.84171 27.3536 3.64645L24.1716 0.464466C23.9763 0.269204 23.6597 0.269204 23.4645 0.464466C23.2692 0.659728 23.2692 0.976311 23.4645 1.17157L26.2929 4L23.4645 6.82843C23.2692 7.02369 23.2692 7.34027 23.4645 7.53553C23.6597 7.7308 23.9763 7.7308 24.1716 7.53553L27.3536 4.35355ZM0 4.5H27V3.5H0V4.5Z" fill="black"/>
@@ -429,9 +462,7 @@
 							<div class="condition__block accordion">
 								<span>&#9660; Комфорт</span>
 								<span>200₽/кв.м</span>
-								<button>
-									<a>Заказать</a>
-								</button>
+								<button class="order__button">Заказать</button>
 							</div>
 							<div class="panel">
 								<ul>
@@ -446,9 +477,7 @@
 							<div class="condition__block accordion">
 								<span>&#9660; Расширенный</span>
 								<span>1200₽/кв.м</span>
-								<button>
-									<a>Заказать</a>
-								</button>
+								<button class="order__button">Заказать</button>
 							</div>
 							<div class="panel">
 								<ul>
@@ -469,9 +498,7 @@
 							<div class="condition__block accordion">
 								<span>&#9660; Премиум</span>
 								<span>2000₽/кв.м</span>
-								<button>
-									<a>Заказать</a>
-								</button>
+								<button class="order__button">Заказать</button>
 							</div>
 							<div class="panel">
 								<ul>
@@ -500,9 +527,7 @@
 							<div class="condition__block accordion">
 								<span> &#9660; Строительство<br> объекта под ключ</span>
 								<span>15000₽/мес.</span>
-								<button>
-									<a>Заказать</a>
-								</button>
+								<button class="order__button">Заказать</button>
 							</div>
 							<div class="panel">
 								<ul>
