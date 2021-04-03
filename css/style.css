@@ -1382,7 +1382,6 @@ nav a {
 }
 
 .prize a {
-
     color: #2E2E2E;
 }
 
@@ -1707,8 +1706,9 @@ footer p {
     padding: 1em 0px 0px 10em;
 }
 
-.image__to__next__work__block {
-    height: 100%;
+.image__to__next__work__block img {
+    width: 613px;
+    height: 373px;
     position: relative;
 }
  
