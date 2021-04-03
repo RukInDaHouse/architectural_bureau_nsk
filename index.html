@@ -105,7 +105,7 @@
 					</div>
 					<div class="transition-translate fade__fifth__line">
 						<li>
-							<a href="#section-five" class="link">контакты</a>
+							<a href="#section-four" class="link">контакты</a>
 						</li>
 					</div>
 					<li>
@@ -152,7 +152,7 @@
 						</div>
 
 						<div class="col-md-6 mx-auto zero__padding">
-							<div class="first__block__textarea" id="section-one">
+							<div class="first__block__textarea">
 								<div class="first__block__text">
 									<h2>АВТОРСКИЙ ДИЗАЙН ИНТЕРЬЕРА КВАРТИР <br>И ЗАГОРОДНЫХ ДОМОВ</h2>
 									<h3>Проектирование, комплектация, отделочные <br>и строительные работы, авторский надзор</h3>
@@ -163,7 +163,7 @@
 				</div>
 			</section>
 
-			<section class="get__price__block">
+			<section class="get__price__block" id="section-two">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 mx-auto portfolio__buro__block">
@@ -559,7 +559,7 @@
 				</div>
 			</section>
 
-			<section class="about__buro__block">
+			<section class="about__buro__block" id="section-one">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 mx-auto about__buro__block">
@@ -575,7 +575,7 @@
 						</div>
 
 						<div class="col-md-6 zero__padding mx-auto">
-							<div class="first__block__textarea" id="section-one">
+							<div class="first__block__textarea">
 								<div class="about__buro__image__block">
 									<img src="./img/buroimgblock.png">
 								</div>
@@ -687,7 +687,7 @@
 				</div>
 			</section>
 
-			<footer>
+			<footer id="section-four">
 				<section>
 					<div class="container">
 						<div class="row">
@@ -722,6 +722,14 @@
 	</body>
 	<script src="../js/script.js"></script>
 	<script src="../js/scroll.js"></script>
+	<script>
+		var smooths = new smooths({  //  Initialize Smooths
+			section: 'scroll-section',
+			speed: 800,
+			anchor: 'link'
+		});
+		</script>
+		
 </html>
 
 
