@@ -31,6 +31,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "FuturaPT";
+    src: url("../fonts/FuturaPT.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 html,
 body {
     margin: 0;
@@ -1214,7 +1221,7 @@ nav a {
 }
 
 .condition__block span:nth-child(2) {
-    font-family: FuturaMediumC;
+    font-family: FuturaPT;
     font-style: normal;
     font-weight: 500;
     line-height: 107%;
@@ -1338,6 +1345,7 @@ nav a {
     line-height: 160%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
+    text-align: left;
 }
 
 .facesblock ul,
@@ -1371,7 +1379,23 @@ nav a {
     line-height: 160%;
     letter-spacing: 0.12em;
     color: #2E2E2E;
+}
+
+.prize a {
+
+    color: #2E2E2E;
+}
+
+.second__facesblock .prize:nth-child(1) {
     text-align: right;
+}
+
+.second__facesblock .prize:nth-child(2) {
+    text-align: left;
+}
+
+.second__facesblock__margin {
+    margin-right: 50px;
 }
 
 .second__facesblock {
