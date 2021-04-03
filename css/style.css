@@ -138,6 +138,42 @@ img {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 
+.form__field {
+    margin: 0px 0px 50px 0px;
+    height: 54px;
+    width: 491px;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: none;
+    padding: 0px 0px 0px 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.order__form__field {
+    margin: 0px 0px 50px 0px;
+    height: 54px;
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: none;
+    padding: 0px 0px 0px 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
 .feedback__form {
     display: flex;
     justify-content: center;
@@ -204,6 +240,13 @@ nav ul li {
     .menu__header {
         font-size: 1.3em;
         padding: 1.5em 0em 1.2em 0em;
+    }
+
+    .portfolio__buro__block h2,
+    .price__block h1,
+    .second__about__buro__block h2,
+    .about__buro__block h2  {
+        text-align: center;
     }
 
     .footer__info a {
@@ -396,6 +439,10 @@ nav ul li {
     .menu__header {
         font-size: 1.3em;
         padding: 1.5em 0em 1.2em 0em;
+    }
+
+    .price__block__padding {
+        padding: 0px 15px 0px 3em!important;
     }
 
     .footer__info h1 {
@@ -1044,7 +1091,6 @@ nav a {
     letter-spacing: 0.12em;
     color: #2E2E2E;
     text-decoration: none;
-    display: inline-block;
 }
 
 .price__info__block h2 {
@@ -1129,7 +1175,6 @@ nav a {
     margin-bottom: 20px;
     position: relative;
     padding: 1.5em 0em 0em 0em;
-    display: inline-block;
 }
 
 .portfolio__buro__block h2 {
@@ -1143,7 +1188,6 @@ nav a {
     margin-bottom: 20px;
     position: relative;
     padding: 1.5em 0em 0em 0em;
-    display: inline-block;
 }
 
 .about__buro__block p {
@@ -1837,7 +1881,6 @@ footer {
 }
 
 .gallery__row {
-    --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
@@ -1848,10 +1891,6 @@ footer {
 
 .li__padding {
     margin-top: 50px;
-}
-
-.portfolio__buro__block h2 {
-    display: inline-block;
 }
 
 .swiper-container {
@@ -1947,6 +1986,7 @@ footer {
     -moz-box-shadow: 1px 1px 3px #000;
     -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
+    cursor: pointer;
   }
   
   @media screen and (max-width: 900px) {
@@ -1957,6 +1997,10 @@ footer {
   
   .close:hover { 
     background: #1a1a1a; 
+}
+
+.navigation {
+    width: 100%;
 }
 
 #menuToggle {
@@ -2031,7 +2075,8 @@ footer {
 
 #menu {
   position: absolute;
-  width: 300px;
+  width: 100vw;
+  height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -2058,10 +2103,6 @@ footer {
 .gallery__paddings {
     padding-right: 0px!important;
     padding-left: 30px!important;
-}
-
-.price__block__padding {
-    padding: 0px 15px 0px 3em!important;
 }
 
 .fill img {
