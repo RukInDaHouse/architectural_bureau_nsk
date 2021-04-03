@@ -39,7 +39,7 @@ document.getElementsByClassName("order__button")[0].addEventListener("click", fu
       modal.classList.toggle("invisible__block");
       document.getElementById("close__modal").addEventListener("click", function() {
         var modal = document.getElementById("openModal");
-            modal.classList.toggle("invisible__block");
+            modal.classList.add("invisible__block");
       });
 });
 
@@ -48,7 +48,7 @@ document.getElementsByClassName("order__button")[1].addEventListener("click", fu
       modal.classList.toggle("invisible__block");
       document.getElementById("close__modal").addEventListener("click", function() {
         var modal = document.getElementById("openModal");
-            modal.classList.toggle("invisible__block");
+            modal.classList.add("invisible__block");
       });
 });
 
@@ -57,7 +57,7 @@ document.getElementsByClassName("order__button")[2].addEventListener("click", fu
       modal.classList.toggle("invisible__block");
       document.getElementById("close__modal").addEventListener("click", function() {
         var modal = document.getElementById("openModal");
-            modal.classList.toggle("invisible__block");
+            modal.classList.add("invisible__block");
       });
 });
 
@@ -66,7 +66,7 @@ document.getElementsByClassName("order__button")[3].addEventListener("click", fu
       modal.classList.toggle("invisible__block");
       document.getElementById("close__modal").addEventListener("click", function() {
         var modal = document.getElementById("openModal");
-            modal.classList.toggle("invisible__block");
+            modal.classList.add("invisible__block");
       });
 });
 
@@ -75,7 +75,7 @@ document.getElementsByClassName("order__button")[4].addEventListener("click", fu
       modal.classList.toggle("invisible__block");
       document.getElementById("close__modal").addEventListener("click", function() {
         var modal = document.getElementById("openModal");
-            modal.classList.toggle("invisible__block");
+            modal.classList.add("invisible__block");
       });
 });
 
