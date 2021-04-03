@@ -2063,3 +2063,38 @@ footer {
 .price__block__padding {
     padding: 0px 15px 0px 3em!important;
 }
+
+.fill img {
+    object-fit: cover;
+}
+
+.swiper-button-prev-unique {
+    left: -150px;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.swiper-button-next-unique {
+    right: -150px;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.swiper-button-prev-unique img,
+.swiper-button-next-unique img {
+    width: 50px;
+}
+
+.slider__block {
+    position: relative;
+}

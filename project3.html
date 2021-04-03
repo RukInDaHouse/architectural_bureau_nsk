@@ -102,7 +102,7 @@
 			<section class="first__block">
 				<div class="container mobilenone">
 					<div class="row">
-						<div class="col-md-6 mx-auto">
+						<div class="col-md-6 mx-auto slider__block">
 							<div class="swiper-container gallery__slider__block">
 								<div class="swiper-wrapper">
 								  	<div class="swiper-slide">
@@ -118,10 +118,14 @@
 										<img src="./img/3/4.jpg" alt="" />
 									</div>
 								</div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
 								<div class="swiper-pagination"></div>
-							  </div>
+							</div>
+							<div class="swiper-button-prev-unique">
+								<img src="./img/back.svg">
+							</div>
+							<div class="swiper-button-next-unique">
+								<img src="./img/next.svg">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -243,8 +247,8 @@
 			el: '.swiper-pagination',
 		  },
 		  navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.swiper-button-next-unique',
+    		prevEl: '.swiper-button-prev-unique'
 		  },
 		});
 	</script>
