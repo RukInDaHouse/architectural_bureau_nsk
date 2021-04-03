@@ -218,10 +218,6 @@ nav ul li {
         font-size: 1em;
     }
 
-    .price__info__block {
-        margin-bottom: 40px;
-    }
-
     .price__info__block h2 {
         font-size: 1.2em;
     }
@@ -297,18 +293,11 @@ nav ul li {
     .about__buro__block h2 {
         font-size: 2em;
     }
-    
-    .about__buro__block h2::after {
-        width: 100%;
-    }
 
     .portfolio__buro__block h2 {
         font-size: 2em;
     }
-    
-    .portfolio__buro__block h2::after {
-        width: 100%;
-    }
+
     
     .about__buro__block p {
         font-size: 1.5em;
@@ -316,10 +305,6 @@ nav ul li {
     
     .about__buro__block h2 {
         font-size: 2em;
-    }
-    
-    .about__buro__block h2::after {
-        width: 100%;
     }
     
     .about__buro__block p {
@@ -488,19 +473,11 @@ nav ul li {
     .about__buro__block h2 {
         font-size: 2em;
     }
-    
-    .about__buro__block h2::after {
-        width: 100%;
-    }
 
     .portfolio__buro__block h2 {
         font-size: 2em;
     }
-    
-    .portfolio__buro__block h2::after {
-        width: 100%;
-    }
-    
+ 
     .about__buro__block p {
         font-size: 1.5em;
     }
@@ -508,11 +485,7 @@ nav ul li {
     .about__buro__block h2 {
         font-size: 2em;
     }
-    
-    .about__buro__block h2::after {
-        width: 100%;
-    }
-    
+ 
     .about__buro__block p {
         font-size: 1.5em;
     }
@@ -659,19 +632,11 @@ nav ul li {
     .about__buro__block h2 {
         font-size: 48px;
     }
-    
-    .about__buro__block h2::after {
-        width: 100%;
-    }
 
     .portfolio__buro__block h2 {
         font-size: 48px;
     }
-    
-    .portfolio__buro__block h2::after {
-        width: 100%;
-    }
-    
+   
     .about__buro__block p {
         font-size: 25px;
     }
@@ -679,11 +644,7 @@ nav ul li {
     .second__about__buro__block h2 {
         font-size: 48px;
     }
-    
-    .second__about__buro__block h2::after {
-        width: 100%;
-      }
-    
+   
     .second__about__buro__block p {
         font-size: 25px;
     }
@@ -870,7 +831,8 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    padding: 0px 3em 0px 3em!important;
+    margin: 0;
+    padding: 0;
 }
 
 .price__block__head {
@@ -1082,7 +1044,6 @@ nav a {
     letter-spacing: 0.12em;
     color: #2E2E2E;
     text-decoration: none;
-    border-bottom: 2px solid #2E2E2E;
     display: inline-block;
 }
 
@@ -1115,8 +1076,18 @@ nav a {
 
 .price__info__block {
     background: rgba(46, 46, 46, 0.07);
-    height: 150px;
-    position: relative
+    height: 170px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.price__info__block:nth-child(6) {
+    margin-bottom: 0px;
+}
+
+.price__image__block {
+    height: 1095px;
+    padding: 0px 0px 0px 15px;
 }
 
 .about__buro__textarea {
@@ -1161,15 +1132,6 @@ nav a {
     display: inline-block;
 }
 
-.about__buro__block h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background-color: #FFF;
-}
-
 .portfolio__buro__block h2 {
     font-family: FuturaMediumC;
     font-style: normal;
@@ -1182,16 +1144,6 @@ nav a {
     position: relative;
     padding: 1.5em 0em 0em 0em;
     display: inline-block;
-}
-
-.portfolio__buro__block h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background-color: #000;
-    padding: 0em 0em 0em 1.5em;
 }
 
 .about__buro__block p {
@@ -1218,16 +1170,6 @@ nav a {
     margin-bottom: 20px;
     position: relative;
     padding: 1.5em 0em 0em 0em;
-    display: inline-block;
-}
-
-.second__about__buro__block h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background-color: #000;
     display: inline-block;
 }
 
@@ -1889,13 +1831,9 @@ footer {
     padding: 1em 0px 0px 0px;
 }
 
-.gallery__left__padding {
-    padding-left: 0.5rem;
-}
-
 .gallery__row>* {
-    padding-right: 3rem!important;
-    padding-bottom: 3rem;
+    padding-right: 30px!important;
+    padding-bottom: 30px;
 }
 
 .gallery__row {
@@ -2111,4 +2049,17 @@ footer {
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+.form__background p {
+    color: #A5A5A5;
+}
+
+.gallery__paddings {
+    padding-right: 0px!important;
+    padding-left: 30px!important;
+}
+
+.price__block__padding {
+    padding: 0px 15px 0px 3em!important;
 }

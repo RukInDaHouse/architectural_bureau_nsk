@@ -37,29 +37,45 @@ document.getElementById("submit").addEventListener("click", function() {
 document.getElementsByClassName("order__button")[0].addEventListener("click", function() {
   var modal = document.getElementById("openModal");
       modal.classList.toggle("invisible__block");
+      document.getElementById("close__modal").addEventListener("click", function() {
+        var modal = document.getElementById("openModal");
+            modal.classList.toggle("invisible__block");
+      });
 });
 
 document.getElementsByClassName("order__button")[1].addEventListener("click", function() {
   var modal = document.getElementById("openModal");
       modal.classList.toggle("invisible__block");
+      document.getElementById("close__modal").addEventListener("click", function() {
+        var modal = document.getElementById("openModal");
+            modal.classList.toggle("invisible__block");
+      });
 });
 
 document.getElementsByClassName("order__button")[2].addEventListener("click", function() {
   var modal = document.getElementById("openModal");
       modal.classList.toggle("invisible__block");
+      document.getElementById("close__modal").addEventListener("click", function() {
+        var modal = document.getElementById("openModal");
+            modal.classList.toggle("invisible__block");
+      });
 });
 
 document.getElementsByClassName("order__button")[3].addEventListener("click", function() {
   var modal = document.getElementById("openModal");
       modal.classList.toggle("invisible__block");
+      document.getElementById("close__modal").addEventListener("click", function() {
+        var modal = document.getElementById("openModal");
+            modal.classList.toggle("invisible__block");
+      });
 });
 
 document.getElementsByClassName("order__button")[4].addEventListener("click", function() {
   var modal = document.getElementById("openModal");
       modal.classList.toggle("invisible__block");
+      document.getElementById("close__modal").addEventListener("click", function() {
+        var modal = document.getElementById("openModal");
+            modal.classList.toggle("invisible__block");
+      });
 });
 
-document.getElementById("close__modal").addEventListener("click", function() {
-  var modal = document.getElementById("openModal");
-      modal.classList.toggle("invisible__block");
-});
