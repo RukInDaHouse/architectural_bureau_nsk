@@ -2107,7 +2107,7 @@ footer {
 .mobile__menu__button {
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 25px;
     margin: auto;
     width: 50px;
     height: 60px;
@@ -2179,19 +2179,18 @@ footer {
 }
 
 .mobile__menu {
-    padding: 0px 25px 0px 0px;
+    padding: 8em 40px 0px 0px;
 }
   
 .mobile__menu ul {
     font-family: FuturaPT;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 1.5em;
     line-height: 117%;
     text-align: right;
     letter-spacing: 0.12em;  
     color: #2E2E2E;
-    list-style-type: none;
     list-style-type: none;
 }
 
@@ -2208,7 +2207,7 @@ footer {
     font-family: FuturaPT;
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
+    font-size: 1em;
     line-height: 117%;
     text-align: right;
     letter-spacing: 0.12em;  
@@ -2220,18 +2219,25 @@ footer {
     font-family: FuturaPT;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 1em;
     line-height: 140%;
     text-align: right;
     letter-spacing: 0.12em;
     color: rgba(72, 72, 72, 0.51);
-    font-size: 26px;
 }
 
 .mobile__menu__top__line {
-    border-top: 2px solid rgba(72, 72, 72, 0.51);;
+    border-top: 2px solid rgba(72, 72, 72, 0.51);
+    margin-top: 3em;
 } 
 
 .mobile__menu__bottom__line {
-    border-bottom: 2px solid rgba(72, 72, 72, 0.51);;
+    border-bottom: 2px solid rgba(72, 72, 72, 0.51);
 } 
+
+.mobile__logo {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 87px;
+}
