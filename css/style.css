@@ -241,12 +241,19 @@ nav ul li {
         font-size: 1.3em;
         padding: 1.5em 0em 1.2em 0em;
     }
+    
+    .price__padings__mobile {
+        padding: 25px!important;
+    }
+
+    .price__block__padding {
+        padding: 25px;
+    }
 
     .portfolio__buro__block h2,
     .price__block h1,
     .second__about__buro__block h2,
-    .about__buro__block h2,
-    .first__block__text h2 {
+    .about__buro__block h2 {
         text-align: left;
     }
 
@@ -263,7 +270,7 @@ nav ul li {
     }
 
     .price__info__block h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .gallery__hover__effect .gallery__hover__effect__text ul {
@@ -300,7 +307,7 @@ nav ul li {
     }
 
     .price__block__head h1 {
-        font-size: 1.8em!important; 
+        font-size: 1.7em; 
     }
 
     .text__to__next__work__block ul {
@@ -324,16 +331,17 @@ nav ul li {
     }
 
     .first__block__text h2 {
-        font-size: 2.2em;
-        text-align: center;
+        font-size: 1.7em;
+        text-align: left;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2.5em 0px 2.5em 0px;
+        margin: 25px;
     }
 
     .first__block__text h3 {
-        font-size: 1.7em;
+        font-size: 1.3em;
+        margin-bottom: 1.5em;
     }
 
     nav button {
@@ -345,12 +353,8 @@ nav ul li {
         font-size: 0.6em;
     }
 
-    .about__buro__block h2 {
-        font-size: 2em;
-    }
-
     .portfolio__buro__block h2 {
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     
@@ -359,27 +363,23 @@ nav ul li {
     }
     
     .about__buro__block h2 {
-        font-size: 2em;
-    }
-    
-    .about__buro__block p {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     .facesblock p {
-        font-size: 1em;
+        font-size: 1.3em;
     }
     
     .facesblock h2 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
     
     .facesblock h3 {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
     
     .facesblock h4 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
     
     .facesblock .date {
@@ -445,12 +445,29 @@ nav ul li {
     .about__buro__block p {
         font-size: 1.3em;
     }
+
+    .about__buro__textarea {
+        padding: 0em 25px 0em 25px;
+    }
 }
 
 @media screen and (min-width: 991px) {
     .menu__header {
         font-size: 1.3em;
         padding: 1.5em 0em 1.2em 0em;
+    }
+
+    .price__block {
+        padding: 0px 0px 5em 0em;
+    }
+    
+
+    .about__buro__textarea {
+        padding: 0em 3em 0em 3em;
+    }
+
+    .price__block__head {
+        padding: 3em 3em 3em 3em!important;
     }
 
     .text__to__next__work__block ul {
@@ -909,10 +926,6 @@ nav {
     padding: 0;
 }
 
-.price__block__head {
-    padding: 3em 3em 3em 3em!important;
-}
-
 .first__block__text h2 {
     font-family: FuturaMediumC;
     font-style: normal;
@@ -961,10 +974,6 @@ nav button a {
 
 nav a {
     color: #2E2E2E!important;
-}
-
-.price__block {
-    padding: 0px 0px 5em 0em;
 }
 
 .get__price__block {
@@ -1163,9 +1172,6 @@ nav a {
     padding: 0px 0px 0px 15px;
 }
 
-.about__buro__textarea {
-    padding: 0em 3em 0em 3em;
-}
 
 @media screen and (min-width: 991px) {
     .desktopnone {
