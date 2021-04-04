@@ -2038,7 +2038,7 @@ footer {
   display: block;
   position: fixed;
   top: 50px;
-  left: 50px;
+  right: 50px;
   z-index: 999;
   user-select: none;
 }
@@ -2104,13 +2104,13 @@ footer {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 -320px;
   padding: 50px;
   padding-top: 125px;
   background: #ededed;
   list-style-type: none;
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(-200%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
