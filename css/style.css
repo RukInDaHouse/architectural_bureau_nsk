@@ -48,10 +48,15 @@ body {
     text-align: left;
     background-repeat: repeat-x, repeat;
     background-size: initial;
+    position: fixed;
 }
 
 .invisible__block {
     display: none;
+}
+
+.delete__scroll {
+    overflow: hidden;
 }
 
 img {

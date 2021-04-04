@@ -14,11 +14,9 @@ for (i = 0; i < acc.length; i++) {
 }
 
 document.getElementsByClassName("mobile__menu__button")[0].addEventListener("click", function() {
-  var mobile__menu__hamburger = document.getElementsByClassName("mobile__menu__hamburger")[0];
-  var mobile__menu = document.getElementsByClassName("mobile__menu")[0];
-      mobile__menu__hamburger.classList.toggle("animate");
-      mobile__menu.classList.toggle("full__mobile__menu");
-
+  document.getElementsByTagName("body")[0].classList.toggle("delete__scroll")
+  document.getElementsByClassName("mobile__menu__hamburger")[0].classList.toggle("animate");
+  document.getElementsByClassName("mobile__menu")[0].classList.toggle("full__mobile__menu");
 });
 
 document.getElementById("modal__button").addEventListener("click", function() {
