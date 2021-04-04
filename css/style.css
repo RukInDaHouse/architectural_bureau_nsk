@@ -241,6 +241,10 @@ nav ul li {
         font-size: 1.3em;
         padding: 1.5em 0em 1.2em 0em;
     }
+
+    .price__info__block {
+        height: 85px;
+    }
     
     .price__padings__mobile {
         padding: 25px!important;
@@ -455,6 +459,10 @@ nav ul li {
     .menu__header {
         font-size: 1.3em;
         padding: 1.5em 0em 1.2em 0em;
+    }
+
+    .price__info__block {
+        height: 170px;
     }
 
     .price__block {
@@ -1161,7 +1169,6 @@ nav a {
 
 .price__info__block {
     background: rgba(46, 46, 46, 0.07);
-    height: 170px;
     position: relative;
     margin-bottom: 15px;
 }
@@ -2184,4 +2191,9 @@ footer {
 
 .li__padding__card {
     margin-top: 25px;
+}
+
+.li__padding__card__mobile {
+    text-align: center;
+    color: #2E2E2E;
 }
