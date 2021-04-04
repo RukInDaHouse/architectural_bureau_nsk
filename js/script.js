@@ -13,6 +13,14 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+document.getElementsByClassName("mobile__menu__button")[0].addEventListener("click", function() {
+  var mobile__menu__hamburger = document.getElementsByClassName("mobile__menu__hamburger")[0];
+  var mobile__menu = document.getElementsByClassName("mobile__menu")[0];
+      mobile__menu__hamburger.classList.toggle("animate");
+      mobile__menu.classList.toggle("full__mobile__menu");
+
+});
+
 document.getElementById("modal__button").addEventListener("click", function() {
   var modal = document.getElementById("modal");
   var gray__overlay = document.getElementById("gray__overlay");
@@ -78,4 +86,3 @@ document.getElementsByClassName("order__button")[4].addEventListener("click", fu
             modal.classList.add("invisible__block");
       });
 });
-
