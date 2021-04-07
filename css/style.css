@@ -2339,4 +2339,19 @@ footer {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 90%;
+    letter-spacing: 0.12em;
+    font-size: 40px;
+}
+
+.mobail__next__gallery__block span h2 {
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 90%;
+    letter-spacing: 0.12em;
+    font-size: 30px;
 }
