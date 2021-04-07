@@ -262,6 +262,11 @@ nav ul li {
         padding: 0em 0em 0em 1em;
     }
 
+    .swiper-container {
+        margin-top: 75px;
+    }
+    
+
     .price__info__block {
         height: 85px;
     }
