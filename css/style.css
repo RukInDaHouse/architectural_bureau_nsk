@@ -115,6 +115,18 @@ img {
     z-index: 8;
 }
 
+.gray__overlay__mobile {
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
 .politic__font {
     font-family: FuturaMediumC;
     font-style: normal;
@@ -246,6 +258,10 @@ nav ul li {
         padding: 1.5em 0em 1.2em 0em;
     }
 
+    .get__price__block {
+        padding: 0em 0em 0em 1em;
+    }
+
     .price__info__block {
         height: 85px;
     }
@@ -311,7 +327,7 @@ nav ul li {
     }
 
     .conditions__block {
-        display: none;
+        padding: 15px;
     }
 
     .price__block__head h1 {
@@ -424,18 +440,21 @@ nav ul li {
         font-size: 1em;
     }
 
+    .condition__block {
+        padding: 2em 1em 2em 1em;
+    }
+
     .condition__block span:nth-child(1) {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     
     .condition__block span:nth-child(2) {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        text-align: right;
     }
 
     .condition__block button {
-        font-size: 1.5em; 
-        width: 200px;
-        height: 51px;
+        display: none;
     }
 
     .price__info__block span {
@@ -467,6 +486,19 @@ nav ul li {
 
     .price__info__block {
         height: 170px;
+    }
+
+    .conditions__block {
+        padding: 0px 0px 8em 4em;
+    }
+
+    .condition__block {
+        padding: 4em;
+    }
+
+    .get__price__block {
+        width: 100%;
+        padding: 1.5em 0em 1.5em 1em;
     }
 
     .price__block {
@@ -651,12 +683,14 @@ nav ul li {
     
     .condition__block span:nth-child(2) {
         font-size: 1.5em;
+        text-align: center;
     }
 
     .condition__block button {
         font-size: 1.5em; 
         width: 200px;
         height: 51px;
+        display: flex;
     }
 
     .price__info__block h2 {
@@ -995,7 +1029,6 @@ nav a {
 
 .get__price__block {
     width: 100%;
-    padding: 1.5em 0em 1.5em 1em;
 }
 
 .get__price__text__block h1{
@@ -1275,13 +1308,8 @@ nav a {
     padding: 1.5em 0em 0em 0em;
 }
 
-.conditions__block {
-    padding: 0px 0px 8em 4em;
-}
-
 .condition__block {
     background: #2E2E2E;
-    padding: 4em;
     position: relative;
 }
 
@@ -1306,7 +1334,6 @@ nav a {
     letter-spacing: 0.12em;
     color: #FFFFFF;
     margin: auto;
-    text-align: center;
     display: inline-block;
     width: 100%;
 }
@@ -1323,7 +1350,6 @@ nav a {
     overflow: hidden;
     -webkit-transition: .3s;
     transition: .3s;
-    display: flex;
 	justify-content: center;
 	align-items: center;
     float: right; 
@@ -2281,17 +2307,37 @@ footer {
     position: fixed;
     z-index: 999;
 }
-.imgblock {
+
+.mobail__main__block {
     position: relative;
     height: 100%;
 }
 
-.imgblock span {
+.mobail__main__block span {
     color: #fff;
-    border-radius: 2px;
     position: absolute;
     right: 0;
     bottom: 10px;
     font-size: 18px;
     padding: 3px 5px;
+}
+
+.mobail__main__block .first__block__text h2,
+.mobail__main__block .first__block__text h3 {
+    color: #FFF;
+    z-index: 9;
+}
+
+.mobail__next__gallery__block {
+    position: relative;
+    height: 100%;
+}
+
+.mobail__next__gallery__block span {
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
