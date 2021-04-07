@@ -965,8 +965,7 @@ nav {
     height: 100%;
     background:rgba(46, 46, 46, 0.07);
     z-index: 9;
-    position: absolute;
-    z-index: 99999999;
+    float: left;
 }
 
 .price__block__text {
@@ -2249,7 +2248,7 @@ footer {
 }
 
 .mobile__menu__links {
-    font-family: FuturaPT;
+    font-family: FuturaLightC;
     font-style: normal;
     font-weight: normal;
     font-size: 1em;
@@ -2260,12 +2259,12 @@ footer {
 }
 
 .mobile__menu__top__line {
-    border-top: 2px solid rgba(72, 72, 72, 0.51);
+    border-top: 1px solid rgba(72, 72, 72, 0.51);
     margin-top: 3em;
 } 
 
 .mobile__menu__bottom__line {
-    border-bottom: 2px solid rgba(72, 72, 72, 0.51);
+    border-bottom: 1px solid rgba(72, 72, 72, 0.51);
 } 
 
 .mobile__call{
