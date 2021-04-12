@@ -262,6 +262,12 @@ nav ul li {
         padding: 0em 0em 0em 1em;
     }
 
+    .portfolio__buro__block h2 {
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 17px;
+    }
+
     .swiper-container {
         margin-top: 75px;
     }
@@ -491,6 +497,10 @@ nav ul li {
 
     .price__info__block {
         height: 170px;
+    }
+
+    .portfolio__buro__block h2 {
+        padding: 1.5em 0em 0em 0em;
     }
 
     .conditions__block {
@@ -1271,9 +1281,7 @@ nav a {
     letter-spacing: 0.12em;
     color: #000;
     text-decoration: none;
-    margin-bottom: 20px;
     position: relative;
-    padding: 1.5em 0em 0em 0em;
 }
 
 .about__buro__block p {
@@ -2120,6 +2128,23 @@ footer {
 }
 
 .project__card ul {
+    color: #000;
+    text-align: left;
+    list-style-type: none;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;   
+    letter-spacing: 0.12em; 
+    padding: 1em;
+}
+
+.names__card {
+    background: #f0f0f0;
+    padding: 1em;
+}
+
+.names__card ul {
     color: #000;
     text-align: left;
     list-style-type: none;
