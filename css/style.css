@@ -2140,8 +2140,14 @@ footer {
 }
 
 .names__card {
+}
+
+.gray {
     background: #f0f0f0;
-    padding: 1em;
+}
+
+.white {
+    background: #fff;
 }
 
 .names__card ul {
@@ -2153,7 +2159,8 @@ footer {
     font-weight: 300;
     line-height: 150%;   
     letter-spacing: 0.12em; 
-    padding: 1em;
+    padding: 0em;
+    font-size: 1.3em    ;
 }
 
 .li__padding__card {
