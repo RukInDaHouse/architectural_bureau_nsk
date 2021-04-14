@@ -364,6 +364,10 @@ nav ul li {
     .container-xxl {
         max-width: 100%!important;
     }
+    .first__block__text {
+        position: relative;
+        z-index: 9999999;
+    }
 
     .first__block__text h2 {
         font-size: 1.7em;
@@ -487,6 +491,7 @@ nav ul li {
     .about__buro__textarea {
         padding: 0em 25px 0em 25px;
     }
+    
 }
 
 @media screen and (min-width: 991px) {
@@ -2139,9 +2144,6 @@ footer {
     padding: 1em;
 }
 
-.names__card {
-}
-
 .gray {
     background: #f0f0f0;
 }
@@ -2282,13 +2284,17 @@ footer {
     letter-spacing: 0.12em;  
     color: #2E2E2E;
     list-style-type: none;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 0em 40px 20px 0px;
 }
 
 .mobile__menu__links {
     font-family: FuturaLightC;
     font-style: normal;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 0.85em;
     line-height: 140%;
     text-align: right;
     letter-spacing: 0.12em;
