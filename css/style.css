@@ -395,14 +395,10 @@ nav ul li {
     .portfolio__buro__block h2 {
         font-size: 1.7em;
     }
-
-    
-    .about__buro__block p {
-        font-size: 1.5em;
-    }
     
     .about__buro__block h2 {
         font-size: 1.7em;
+        margin-top: 60px;
     }
 
     .facesblock p {
@@ -486,6 +482,7 @@ nav ul li {
 
     .about__buro__block p {
         font-size: 1.3em;
+        padding: 0em;
     }
 
     .about__buro__textarea {
@@ -639,6 +636,7 @@ nav ul li {
  
     .about__buro__block p {
         font-size: 1.5em;
+        padding: 1.5em 0em 0em 0em;
     }
     
     .about__buro__block h2 {
@@ -732,6 +730,11 @@ nav ul li {
     .about__buro__block p {
         font-size: 1.3em;
     }
+    .second__about__buro__block h2 {
+        font-size: 48px;
+        position: relative;
+    }
+   
 }
 
 @media screen and (min-width: 1400px) {
@@ -1275,7 +1278,6 @@ nav a {
     text-decoration: none;
     margin-bottom: 20px;
     position: relative;
-    padding: 1.5em 0em 0em 0em;
 }
 
 .portfolio__buro__block h2 {
@@ -1295,7 +1297,6 @@ nav a {
     font-weight: normal;
     line-height: 120%;
     color: #FFFFFF;
-    padding: 1.5em 0em 0em 0em;
 }
 
 .second__about__buro__block {
@@ -1310,9 +1311,7 @@ nav a {
     letter-spacing: 0.12em;
     color: #000;
     text-decoration: none;
-    margin-bottom: 20px;
     position: relative;
-    padding: 1.5em 0em 0em 0em;
     display: inline-block;
 }
 
@@ -2313,7 +2312,7 @@ footer {
 .mobile__call{
     position: absolute;
     top: 20px;
-    left: 30px;
+    left: 40px;
     width: 35px;
     opacity: 0.5;
 }
