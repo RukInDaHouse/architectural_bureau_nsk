@@ -2412,6 +2412,7 @@ footer {
     line-height: 90%;
     letter-spacing: 0.12em;
     font-size: 40px;
+    z-index: 99;
 }
 
 .mobail__next__gallery__block span h2 {
