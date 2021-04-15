@@ -364,9 +364,10 @@ nav ul li {
     .container-xxl {
         max-width: 100%!important;
     }
+
     .first__block__text {
         position: relative;
-        z-index: 9999999;
+        z-index: 9;
     }
 
     .first__block__text h2 {
@@ -480,6 +481,10 @@ nav ul li {
         font-size: 1.3em;
     }
 
+    .second__about__buro__block p {
+        padding: 0em;
+    }
+
     .about__buro__block p {
         font-size: 1.3em;
         padding: 0em;
@@ -487,6 +492,10 @@ nav ul li {
 
     .about__buro__textarea {
         padding: 0em 25px 0em 25px;
+    }
+
+    .panel ul {
+        padding: 0;
     }
     
 }
@@ -725,6 +734,10 @@ nav ul li {
 
     .second__about__buro__block p {
         font-size: 1.3em;
+    }
+
+    .second__about__buro__block p {
+        padding: 1.5em 0em 0em 0em;
     }
 
     .about__buro__block p {
@@ -1321,7 +1334,6 @@ nav a {
     font-weight: normal;
     line-height: 120%;
     color: #000;
-    padding: 1.5em 0em 0em 0em;
 }
 
 .condition__block {
@@ -2164,6 +2176,19 @@ footer {
     font-size: 1.3em    ;
 }
 
+.names__dates ul {
+    color: #000;
+    text-align: left;
+    list-style-type: none;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;   
+    letter-spacing: 0.12em; 
+    padding: 25px 25px 25px 25px;
+    font-size: 1.2em;
+}
+
 .li__padding__card {
     margin-top: 25px;
 }
@@ -2396,4 +2421,12 @@ footer {
     line-height: 90%;
     letter-spacing: 0.12em;
     font-size: 30px;
+}
+.span__arrow {
+    float: left;
+    transition: 0.5s;
+}
+
+.active .span__arrow {
+    transform: rotate(180deg);
 }
