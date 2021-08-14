@@ -245,665 +245,6 @@ nav ul li {
     color: #2E2E2E;
 }
 
-@media screen and (max-width: 700px) {
-    .menu__header {
-        font-size: 1.3em;
-        padding: 1.5em 0em 1.2em 0em;
-    }
-
-    .get__price__block {
-        padding: 0em 0em 0em 1em;
-    }
-
-    .portfolio__buro__block h2 {
-        padding: 0;
-        margin-top: 50px;
-        margin-bottom: 17px;
-    }
-
-    .swiper-container {
-        margin-top: 75px;
-    }
-    
-
-    .price__info__block {
-        height: 85px;
-    }
-    
-    .price__padings__mobile {
-        padding: 25px!important;
-    }
-
-    .price__block__padding {
-        padding: 25px;
-    }
-
-    .portfolio__buro__block h2,
-    .price__block h1,
-    .second__about__buro__block h2,
-    .about__buro__block h2 {
-        text-align: left;
-    }
-
-    .footer__info a {
-        font-size: 15px;
-    }
-
-    .footer__info p {
-        font-size: 15px;
-    }
-
-    .footer__info h1 {
-        font-size: 1em;
-    }
-
-    .price__info__block h2 {
-        font-size: 1.3em;
-    }
-
-    .gallery__hover__effect .gallery__hover__effect__text ul {
-        font-size: 10px;
-    }
-
-    .gallery__hover__effect__text ul li:nth-child(2n) {
-        font-size: 15px;
-    }
-    
-    .gallery__hover__effect__text ul li:nth-child(2n+1) {
-        font-size: 15px;
-    }
-
-    html {
-        width: 100vw;
-    }
-
-    main {
-        width: 100%;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .form__window,
-    .feedback__form {
-        display: none;
-    }
-
-    .conditions__block {
-        padding: 15px;
-    }
-
-    .price__block__head h1 {
-        font-size: 1.7em; 
-    }
-
-    .text__to__next__work__block ul {
-        list-style-type: none;
-        padding: 0em 0px 0px 1em;
-    }
-
-    .text__to__next__work__block span {
-        font-size: 30px;
-        padding: 0em 0px 0px 1em;
-        text-align: center;
-    }
-
-    .container, 
-    .container-lg, 
-    .container-md, 
-    .container-sm, 
-    .container-xl, 
-    .container-xxl {
-        max-width: 100%!important;
-    }
-
-    .first__block__text {
-        position: relative;
-        z-index: 9;
-    }
-
-    .first__block__text h2 {
-        font-size: 1.7em;
-        text-align: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 25px;
-    }
-
-    .first__block__text h3 {
-        font-size: 1.3em;
-        margin-bottom: 1.5em;
-    }
-
-    nav button {
-        width: 190px;
-        height: 52px;
-    }
-
-    nav button a {
-        font-size: 0.6em;
-    }
-
-    .portfolio__buro__block h2 {
-        font-size: 1.7em;
-    }
-    
-    .about__buro__block h2 {
-        font-size: 1.7em;
-        margin-top: 60px;
-    }
-
-    .facesblock p {
-        font-size: 1.3em;
-    }
-    
-    .facesblock h2 {
-        font-size: 1.3em;
-    }
-    
-    .facesblock h3 {
-        font-size: 1.7em;
-    }
-    
-    .facesblock h4 {
-        font-size: 1.3em;
-    }
-    
-    .facesblock .date {
-        font-size: 0.75em;
-    }
-    
-    .facesblock .prize {
-        font-size: 0.75em;
-        padding: 0;
-    }
-    
-    .second__facesblock .date {
-        font-size: 0.6em;
-    }
-    
-    .second__facesblock .prize {
-        font-size: 0.6em;
-        padding: 0;
-    }
-    
-    .second__facesblock p {
-        font-size: 1em;
-    }
-    
-    .second__facesblock h2 {
-        font-size: 1em;
-    }
-    
-    .second__facesblock h3 {
-        font-size: 1.5em;
-    }
-    
-    .second__facesblock h4 {
-        font-size: 1em;
-    }
-
-    .condition__block {
-        padding: 2em 1em 2em 1em;
-    }
-
-    .condition__block span:nth-child(1) {
-        font-size: 1.2em;
-    }
-    
-    .condition__block span:nth-child(2) {
-        font-size: 1.2em;
-        text-align: right;
-    }
-
-    .condition__block button {
-        display: none;
-    }
-
-    .price__info__block span {
-        font-size: 0.7em;
-    }
-
-    .panel ul li {
-        font-size: 1.3em;
-    }
-
-    .second__about__buro__block p {
-        font-size: 1.3em;
-    }
-
-    .second__about__buro__block p {
-        padding: 0em;
-    }
-
-    .about__buro__block p {
-        font-size: 1.3em;
-        padding: 0em;
-    }
-
-    .about__buro__textarea {
-        padding: 0em 25px 0em 25px;
-    }
-
-    .panel ul {
-        padding: 0;
-    }
-    
-}
-
-@media screen and (min-width: 991px) {
-    .menu__header {
-        font-size: 1.3em;
-        padding: 1.5em 0em 1.2em 0em;
-    }
-
-    .logo {
-        width: 150px;
-        float: right;
-        overflow: auto;
-        margin: 0pc 0px 1.5em 0px;
-    }
-
-    .price__info__block {
-        height: 170px;
-    }
-
-    .portfolio__buro__block h2 {
-        padding: 1.5em 0em 0em 0em;
-    }
-
-    .conditions__block {
-        padding: 0px 0px 8em 4em;
-    }
-
-    .condition__block {
-        padding: 4em;
-    }
-
-    .get__price__block {
-        width: 100%;
-        padding: 1.5em 0em 1.5em 1em;
-    }
-
-    .price__block {
-        padding: 0px 0px 5em 0em;
-    }
-    
-
-    .about__buro__textarea {
-        padding: 0em 3em 0em 3em;
-    }
-
-    .price__block__head {
-        padding: 3em 3em 3em 3em!important;
-    }
-
-    .text__to__next__work__block ul {
-        list-style-type: none;
-        padding: 1em 0px 0px 10em;
-    }
-
-    .text__to__next__work__block span {
-        font-size: 50px;
-    }
-
-    .text__to__next__work__block,
-    .image__to__next__work__block {
-        height: 50vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .price__block__padding {
-        padding: 0px 15px 0px 3em!important;
-    }
-
-    .footer__info h1 {
-        font-size: 1.2em;
-    }
-
-    .footer__info a {
-        font-size: 1.3em;
-    }
-
-    .footer__info p {
-        font-size: 1.3em;
-    }
-
-    .footer__info h1 {
-        font-size: 1.7em;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-    .first__block__text {
-        margin-top: 43vh;
-    }
-
-    nav ul {
-        padding: 0px 0px 1.2em 50px;
-        font-size: 1.5em;
-    }
-
-    .price__block h1 {
-        font-size: 2em;
-    }
-
-    .gallery__hover__effect .gallery__hover__effect__text ul {
-        font-size: 16px;
-    }
-
-    .gallery__hover__effect__text ul li:nth-child(2n) {
-        font-size: 25px;
-    }
-    
-    .gallery__hover__effect__text ul li:nth-child(2n+1) {
-        font-size: 25px;
-    }
-
-    .container, 
-    .container-lg, 
-    .container-md, 
-    .container-sm, 
-    .container-xl, 
-    .container-xxl {
-        max-width: 100%!important;
-    }
-
-    .first__block__text h2 {
-        font-size: 2.2em;
-        padding: 0px 0px 2.5em 25px;
-    }
-    
-    .first__block__text h3 {
-        font-size: 1.7em;
-    }
-
-    nav button {
-        width: 190px;
-        height: 52px;
-    }
-
-    nav button a {
-        font-size: 0.6em;
-    }
-
-    .about__buro__block h2 {
-        font-size: 2em;
-    }
-
-    .portfolio__buro__block h2 {
-        font-size: 2em;
-    }
- 
-    .about__buro__block p {
-        font-size: 1.5em;
-        padding: 1.5em 0em 0em 0em;
-    }
-    
-    .about__buro__block h2 {
-        font-size: 2em;
-    }
- 
-    .about__buro__block p {
-        font-size: 1.5em;
-    }
-
-    .facesblock p {
-        font-size: 1.5em;
-    }
-    
-    .facesblock h2 {
-        font-size: 1.3em;
-    }
-    
-    .facesblock h3 {
-        font-size: 3em;
-    }
-    
-    .facesblock h4 {
-        font-size: 1.3em;
-    }
-    
-    .facesblock .date {
-        font-size: 1.1em;
-    }
-    
-    .facesblock .prize {
-        font-size: 1.1em;
-    }
-    
-    .second__facesblock .date {
-        font-size: 1.1em;
-    }
-    
-    .second__facesblock .prize {
-        font-size: 1.1em;
-    }
-    
-    .second__facesblock p {
-        font-size: 1.5em;
-    }
-    
-    .second__facesblock h2 {
-        font-size: 1.3em;
-    }
-    
-    .second__facesblock h3 {
-        font-size: 3em;
-    }
-    
-    .second__facesblock h4 {
-        font-size: 1.3em;
-    }
-
-    .condition__block span:nth-child(1) {
-        font-size: 1.5em;
-    }
-    
-    .condition__block span:nth-child(2) {
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    .condition__block button {
-        font-size: 1.5em; 
-        width: 200px;
-        height: 51px;
-        display: flex;
-    }
-
-    .price__info__block h2 {
-        font-size: 1.7em;
-    }
-
-    .price__info__block span {
-        font-size: 0.7em;
-    }
-
-    .panel ul li {
-        font-size: 1.3em;
-    }
-
-    .second__about__buro__block p {
-        font-size: 1.3em;
-    }
-
-    .second__about__buro__block p {
-        padding: 1.5em 0em 0em 0em;
-    }
-
-    .about__buro__block p {
-        font-size: 1.3em;
-    }
-    .second__about__buro__block h2 {
-        font-size: 2em;
-        position: relative;
-    }
-   
-}
-
-@media screen and (min-width: 1400px) {
-    .menu__header {
-        font-size: 1.9em;
-        padding: 1.5em 0em 3.5em 0em;
-    }
-
-    .logo {
-        width: 250px;
-        float: right;
-        overflow: auto;
-        margin: 0pc 0px 1.5em 0px;
-    }
-
-    .gallery__hover__effect .gallery__hover__effect__text ul {
-        font-size: 16px;
-    }
-
-    .gallery__hover__effect__text ul li:nth-child(2n) {
-        font-size: 25px;
-    }
-    
-    .gallery__hover__effect__text ul li:nth-child(2n+1) {
-        font-size: 25px; 
-    }
-
-    .price__block h1 {
-        font-size: 48px;;
-    }
-
-    .first__block__text {
-        margin-top: 43vh;
-    }
-
-    nav ul {
-        padding: 0px 0px 1.2em 0px;
-    }
-
-    .panel ul li {
-        font-size: 1.5em;
-    }
-
-    nav ul {
-        font-size: 2em;
-    }
-
-    nav button {
-        width: 250px;
-        height: 52px;
-    }
-
-    nav button a {
-        font-size: 25px;
-    }
-
-    .first__block__text h2 {
-        font-size: 3em;
-        padding: 0px 0px 2.5em 25px;
-    }
-    
-    .first__block__text h3 {
-        font-size: 2em;
-    }
-
-    .about__buro__block h2 {
-        font-size: 48px;
-    }
-
-    .portfolio__buro__block h2 {
-        font-size: 48px;
-    }
-   
-    .about__buro__block p {
-        font-size: 25px;
-    }
-    
-    .second__about__buro__block h2 {
-        font-size: 48px;
-    }
-   
-    .second__about__buro__block p {
-        font-size: 25px;
-    }
-
-    .facesblock p {
-        font-size: 1.5em;
-    }
-    
-    .facesblock h2 {
-        font-size: 1.3em;
-    }
-    
-    .facesblock h3 {
-        font-size: 3em;
-    }
-    
-    .facesblock h4 {
-        font-size: 1.3em;
-    }
-    
-    .facesblock .date {
-        font-size: 1.5em;
-    }
-    
-    .facesblock .prize {
-        font-size: 1.5em;
-    }
-    
-    .second__facesblock .date {
-        font-size: 1.5em;
-    }
-    
-    .second__facesblock .prize {
-        font-size: 1.5em;
-    }
-    
-    .second__facesblock p {
-        font-size: 1.5em;
-    }
-    
-    .second__facesblock h2 {
-        font-size: 1.3em;
-    }
-    
-    .second__facesblock h3 {
-        font-size: 3em;
-    }
-    
-    .second__facesblock h4 {
-        font-size: 1.3em;
-    }
-
-    .condition__block span:nth-child(1) {
-        font-size: 2em;
-    }
-    
-    .condition__block span:nth-child(2) {
-        font-size: 2em;
-    }
-
-    .condition__block button {
-        font-size: 1.5em; 
-        width: 230px;
-        height: 51px;
-    }
-  
-    .price__info__block h2 {
-        font-size: 2.3em;
-    }
-
-    .price__info__block span {
-        font-size: 1em;
-    }
-}
-
 nav {
     position: fixed!important;
     width: 20vw;
@@ -1029,7 +370,6 @@ nav {
 }
 
 .first__block__text h3 {
-    padding: 0px 0px 0em 25px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
@@ -1925,7 +1265,6 @@ footer {
     position: absolute;
     bottom: 0;
     list-style-type: none;
-    padding: 0px 0px 2em 5em;
 }
 
 .gallery__hover__effect__text ul li:nth-child(2n) {
@@ -2432,6 +1771,7 @@ footer {
     letter-spacing: 0.12em;
     font-size: 30px;
 }
+
 .span__arrow {
     float: left;
     transition: 0.5s;
@@ -2439,4 +1779,762 @@ footer {
 
 .active .span__arrow {
     transform: rotate(180deg);
+}
+
+@media screen and (max-width: 700px) {
+    .menu__header {
+        font-size: 1.3em;
+        padding: 1.5em 0em 1.2em 0em;
+    }
+
+    .get__price__block {
+        padding: 0em 0em 0em 1em;
+    }
+
+    .portfolio__buro__block h2 {
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 17px;
+    }
+
+    .swiper-container {
+        margin-top: 75px;
+    }
+    
+
+    .price__info__block {
+        height: 85px;
+    }
+    
+    .price__padings__mobile {
+        padding: 25px!important;
+    }
+
+    .price__block__padding {
+        padding: 25px;
+    }
+
+    .portfolio__buro__block h2,
+    .price__block h1,
+    .second__about__buro__block h2,
+    .about__buro__block h2 {
+        text-align: left;
+    }
+
+    .footer__info a {
+        font-size: 15px;
+    }
+
+    .footer__info p {
+        font-size: 15px;
+    }
+
+    .footer__info h1 {
+        font-size: 1em;
+    }
+
+    .price__info__block h2 {
+        font-size: 1.3em;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        font-size: 10px;
+    }
+
+    .gallery__hover__effect__text ul li:nth-child(2n) {
+        font-size: 15px;
+    }
+    
+    .gallery__hover__effect__text ul li:nth-child(2n+1) {
+        font-size: 15px;
+    }
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        padding: 0px 0px 2em 5em;
+    }
+
+    html {
+        width: 100vw;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .form__window,
+    .feedback__form {
+        display: none;
+    }
+
+    .conditions__block {
+        padding: 15px;
+    }
+
+    .price__block__head h1 {
+        font-size: 1.7em; 
+    }
+
+    .text__to__next__work__block ul {
+        list-style-type: none;
+        padding: 0em 0px 0px 1em;
+    }
+
+    .text__to__next__work__block span {
+        font-size: 30px;
+        padding: 0em 0px 0px 1em;
+        text-align: center;
+    }
+
+    .container, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl, 
+    .container-xxl {
+        max-width: 100%!important;
+    }
+
+    .first__block__text {
+        position: relative;
+        z-index: 9;
+    }
+
+    .first__block__text h2 {
+        font-size: 1.7em;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+    }
+
+    .first__block__text h3 {
+        font-size: 1.3em;
+        margin-bottom: 1.5em;
+    }
+
+    nav button {
+        width: 190px;
+        height: 52px;
+    }
+
+    nav button a {
+        font-size: 0.6em;
+    }
+
+    .portfolio__buro__block h2 {
+        font-size: 1.7em;
+    }
+    
+    .about__buro__block h2 {
+        font-size: 1.7em;
+        margin-top: 60px;
+    }
+
+    .facesblock p {
+        font-size: 1.3em;
+    }
+    
+    .facesblock h2 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock h3 {
+        font-size: 1.7em;
+    }
+    
+    .facesblock h4 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock .date {
+        font-size: 0.75em;
+    }
+    
+    .facesblock .prize {
+        font-size: 0.75em;
+        padding: 0;
+    }
+    
+    .second__facesblock .date {
+        font-size: 0.6em;
+    }
+    
+    .second__facesblock .prize {
+        font-size: 0.6em;
+        padding: 0;
+    }
+    
+    .second__facesblock p {
+        font-size: 1em;
+    }
+    
+    .second__facesblock h2 {
+        font-size: 1em;
+    }
+    
+    .second__facesblock h3 {
+        font-size: 1.5em;
+    }
+    
+    .second__facesblock h4 {
+        font-size: 1em;
+    }
+
+    .condition__block {
+        padding: 2em 1em 2em 1em;
+    }
+
+    .condition__block span:nth-child(1) {
+        font-size: 1.2em;
+    }
+    
+    .condition__block span:nth-child(2) {
+        font-size: 1.2em;
+        text-align: right;
+    }
+
+    .condition__block button {
+        display: none;
+    }
+
+    .price__info__block span {
+        font-size: 0.7em;
+    }
+
+    .panel ul li {
+        font-size: 1.3em;
+    }
+
+    .second__about__buro__block p {
+        font-size: 1.3em;
+    }
+
+    .second__about__buro__block p {
+        padding: 0em;
+    }
+
+    .about__buro__block p {
+        font-size: 1.3em;
+        padding: 0em;
+    }
+
+    .about__buro__textarea {
+        padding: 0em 25px 0em 25px;
+    }
+
+    .panel ul {
+        padding: 0;
+    }
+    
+}
+
+@media screen and (min-width: 991px) {
+    .menu__header {
+        font-size: 1.3em;
+        padding: 1.5em 0em 1.2em 0em;
+    }
+
+    .logo {
+        width: 150px;
+        float: right;
+        overflow: auto;
+        margin: 0pc 0px 1.5em 0px;
+    }
+
+    .price__info__block {
+        height: 170px;
+    }
+
+    .portfolio__buro__block h2 {
+        padding: 1.5em 0em 0em 0em;
+    }
+
+    .conditions__block {
+        padding: 0px 0px 8em 4em;
+    }
+
+    .condition__block {
+        padding: 4em;
+    }
+
+    .get__price__block {
+        width: 100%;
+        padding: 1.5em 0em 1.5em 1em;
+    }
+
+    .price__block {
+        padding: 0px 0px 5em 0em;
+    }
+    
+
+    .about__buro__textarea {
+        padding: 0em 3em 0em 3em;
+    }
+
+    .price__block__head {
+        padding: 3em 3em 3em 3em!important;
+    }
+
+    .text__to__next__work__block ul {
+        list-style-type: none;
+        padding: 1em 0px 0px 10em;
+    }
+
+    .text__to__next__work__block span {
+        font-size: 50px;
+    }
+
+    .text__to__next__work__block,
+    .image__to__next__work__block {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .price__block__padding {
+        padding: 0px 15px 0px 3em!important;
+    }
+
+    .footer__info h1 {
+        font-size: 1.2em;
+    }
+
+    .footer__info a {
+        font-size: 1.3em;
+    }
+
+    .footer__info p {
+        font-size: 1.3em;
+    }
+
+    .footer__info h1 {
+        font-size: 1.7em;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .first__block__text {
+        margin-top: 43vh;
+    }
+
+    nav ul {
+        padding: 0px 0px 1.2em 50px;
+        font-size: 1.5em;
+    }
+
+    .price__block h1 {
+        font-size: 2em;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        font-size: 16px;
+    }
+
+    .gallery__hover__effect__text ul li:nth-child(2n) {
+        font-size: 25px;
+    }
+    
+    .gallery__hover__effect__text ul li:nth-child(2n+1) {
+        font-size: 25px;
+    }
+
+    .container, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl, 
+    .container-xxl {
+        max-width: 100%!important;
+    }
+
+    .first__block__text h2 {
+        font-size: 2.2em;
+        padding: 0px 0px 2.5em 25px;
+    }
+    
+    .first__block__text h3 {
+        font-size: 1.7em;
+    }
+
+    nav button {
+        width: 190px;
+        height: 52px;
+    }
+
+    nav button a {
+        font-size: 0.6em;
+    }
+
+    .about__buro__block h2 {
+        font-size: 2em;
+    }
+
+    .portfolio__buro__block h2 {
+        font-size: 2em;
+    }
+ 
+    .about__buro__block p {
+        font-size: 1.5em;
+        padding: 1.5em 0em 0em 0em;
+    }
+    
+    .about__buro__block h2 {
+        font-size: 2em;
+    }
+ 
+    .about__buro__block p {
+        font-size: 1.5em;
+    }
+
+    .facesblock p {
+        font-size: 1.5em;
+    }
+    
+    .facesblock h2 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock h3 {
+        font-size: 3em;
+    }
+    
+    .facesblock h4 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock .date {
+        font-size: 1.1em;
+    }
+    
+    .facesblock .prize {
+        font-size: 1.1em;
+    }
+    
+    .second__facesblock .date {
+        font-size: 1.1em;
+    }
+    
+    .second__facesblock .prize {
+        font-size: 1.1em;
+    }
+    
+    .second__facesblock p {
+        font-size: 1.5em;
+    }
+    
+    .second__facesblock h2 {
+        font-size: 1.3em;
+    }
+    
+    .second__facesblock h3 {
+        font-size: 3em;
+    }
+    
+    .second__facesblock h4 {
+        font-size: 1.3em;
+    }
+
+    .condition__block span:nth-child(1) {
+        font-size: 1.5em;
+    }
+    
+    .condition__block span:nth-child(2) {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .condition__block button {
+        font-size: 1.5em; 
+        width: 200px;
+        height: 51px;
+        display: flex;
+    }
+
+    .price__info__block h2 {
+        font-size: 1.7em;
+    }
+
+    .price__info__block span {
+        font-size: 0.7em;
+    }
+
+    .panel ul li {
+        font-size: 1.3em;
+    }
+
+    .second__about__buro__block p {
+        font-size: 1.3em;
+    }
+
+    .second__about__buro__block p {
+        padding: 1.5em 0em 0em 0em;
+    }
+
+    .about__buro__block p {
+        font-size: 1.3em;
+    }
+    .second__about__buro__block h2 {
+        font-size: 2em;
+        position: relative;
+    }
+
+    .li__padding {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .first__block__text h2 {
+        font-size: 2em;
+        padding: 0px 0px 2.6em 25px;
+    }
+
+    .first__block__text h3 {
+        font-size: 1.3em;
+        padding: 0px 25px 2.5em 30px;
+    }
+
+    .li__padding {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 180px;
+        float: right;
+        overflow: auto;
+        margin: 50px 0px 1.5em 0px;
+    }
+
+    .menu__header {
+        font-size: 1.5em;
+        margin: 0px 0px 40px 0px;
+        line-height: 25px;
+    }
+
+    .menu__list ul li {
+        font-size: 1em;
+        line-height: 35px;
+    }
+
+    .menu__list button {
+        font-size: 1.3em;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        font-size: 30px;
+    }
+
+    .gallery__hover__effect__text ul li:nth-child(2n) {
+        font-size: 18px;
+    }
+    
+    .gallery__hover__effect__text ul li:nth-child(2n+1) {
+        font-size: 17px;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        padding: 0em 0em 1em 1em;
+        line-height: 10px;
+    }
+
+    .footer__info h1 {
+        font-size: 1.3em;
+    }
+
+    .footer__info a {
+        font-size: 1.1em;
+    }
+
+    .footer__info p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .menu__header {
+        font-size: 1.9em;
+        padding: 1.5em 0em 3.5em 0em;
+        line-height: 35px;
+    }
+  
+    .footer__info h1 {
+        font-size: 1.7em;
+    }
+
+    .footer__info a {
+        font-size: 1.3em;
+    }
+
+    .footer__info p {
+        font-size: 1.3em;
+    }
+
+    .li__padding {
+        margin-top: 50px;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        padding: 0px 0px 2em 5em;
+    }
+
+    .menu__list ul li {
+        font-size: 1em;
+        line-height: 60px;
+    }
+
+    .logo {
+        width: 250px;
+        float: right;
+        overflow: auto;
+        margin: 0px 0px 1.5em 0px;
+    }
+
+    .gallery__hover__effect .gallery__hover__effect__text ul {
+        font-size: 16px;
+    }
+
+    .gallery__hover__effect__text ul li:nth-child(2n) {
+        font-size: 25px;
+    }
+    
+    .gallery__hover__effect__text ul li:nth-child(2n+1) {
+        font-size: 25px; 
+    }
+
+    .price__block h1 {
+        font-size: 48px;;
+    }
+
+    .first__block__text {
+        margin-top: 43vh;
+    }
+
+    nav ul {
+        padding: 0px 0px 1.2em 0px;
+    }
+
+    .panel ul li {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        font-size: 2em;
+    }
+
+    nav button {
+        width: 250px;
+        height: 52px;
+    }
+
+    nav button a {
+        font-size: 25px;
+    }
+
+    .first__block__text h2 {
+        font-size: 3em;
+        padding: 0px 0px 2.5em 25px;
+    }
+    
+    .first__block__text h3 {
+        font-size: 2em;
+    }
+
+    .about__buro__block h2 {
+        font-size: 48px;
+    }
+
+    .portfolio__buro__block h2 {
+        font-size: 48px;
+    }
+   
+    .about__buro__block p {
+        font-size: 25px;
+    }
+    
+    .second__about__buro__block h2 {
+        font-size: 48px;
+    }
+   
+    .second__about__buro__block p {
+        font-size: 25px;
+    }
+
+    .facesblock p {
+        font-size: 1.5em;
+    }
+    
+    .facesblock h2 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock h3 {
+        font-size: 3em;
+    }
+    
+    .facesblock h4 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock .date {
+        font-size: 1.5em;
+    }
+    
+    .facesblock .prize {
+        font-size: 1.5em;
+    }
+    
+    .second__facesblock .date {
+        font-size: 1.5em;
+    }
+    
+    .second__facesblock .prize {
+        font-size: 1.5em;
+    }
+    
+    .second__facesblock p {
+        font-size: 1.5em;
+    }
+    
+    .second__facesblock h2 {
+        font-size: 1.3em;
+    }
+    
+    .second__facesblock h3 {
+        font-size: 3em;
+    }
+    
+    .second__facesblock h4 {
+        font-size: 1.3em;
+    }
+
+    .condition__block span:nth-child(1) {
+        font-size: 2em;
+    }
+    
+    .condition__block span:nth-child(2) {
+        font-size: 2em;
+    }
+
+    .condition__block button {
+        font-size: 1.5em; 
+        width: 230px;
+        height: 51px;
+    }
+  
+    .price__info__block h2 {
+        font-size: 2.3em;
+    }
+
+    .price__info__block span {
+        font-size: 1em;
+    }
 }
