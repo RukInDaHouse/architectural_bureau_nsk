@@ -750,6 +750,17 @@ nav ul li {
    
 }
 
+@media screen and (min-width: 1200px) {
+    .first__block__text h2 {
+        font-size: 2em;
+        padding: 0px 0px 2.6em 25px;
+    }
+    .first__block__text h3 {
+        font-size: 1.4em;
+        padding: 0px 25px 2.5em 30px;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     .menu__header {
         font-size: 1.9em;
@@ -1029,7 +1040,6 @@ nav {
 }
 
 .first__block__text h3 {
-    padding: 0px 0px 0em 25px;
     font-family: FuturaBookC;
     font-style: normal;
     font-weight: normal;
