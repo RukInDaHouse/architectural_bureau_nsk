@@ -2373,6 +2373,30 @@ footer {
         right: 20px;
         top: 0px;
     }
+
+    .facesblock p {
+        font-size: 1.2em;
+    }
+    
+    .facesblock h2 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock h3 {
+        font-size: 2em;
+    }
+    
+    .facesblock h4 {
+        font-size: 1.3em;
+    }
+    
+    .facesblock .date {
+        font-size: 1.1em;
+    }
+    
+    .facesblock .prize {
+        font-size: 1.1em;
+    }
 }
 
 @media screen and (min-width: 1400px) {
