@@ -2342,8 +2342,20 @@ footer {
     }
 
     .gallery__hover__effect .gallery__hover__effect__text ul {
-        padding: -10em 0em 0em 1em;
+        padding: 0em 0em 1em 1em;
         line-height: 10px;
+    }
+
+    .footer__info h1 {
+        font-size: 1.3em;
+    }
+
+    .footer__info a {
+        font-size: 1.1em;
+    }
+
+    .footer__info p {
+        font-size: 1.1em;
     }
 }
 
@@ -2352,6 +2364,18 @@ footer {
         font-size: 1.9em;
         padding: 1.5em 0em 3.5em 0em;
         line-height: 35px;
+    }
+  
+    .footer__info h1 {
+        font-size: 1.7em;
+    }
+
+    .footer__info a {
+        font-size: 1.3em;
+    }
+
+    .footer__info p {
+        font-size: 1.3em;
     }
 
     .li__padding {
