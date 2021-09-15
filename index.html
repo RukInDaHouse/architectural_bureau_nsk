@@ -65,13 +65,13 @@
 				<a id="close__modal" title="Закрыть" class="close">&#215;</a>
 				<form role="form" method="post" action="mail.php">
 					<p>Имя</p>
-					<input type="text" class="order__form__field" id="name" pattern="^[А-Яа-яЁё\s]+$" minlength="1" maxlength="18" placeholder="" name="user_name" value="" required>
+					<input type="text" class="order__form__field" id="name" placeholder="" name="user_name" value="" required>
 					<p>Email</p>
 					<input type="email" class="order__form__field" id="email" placeholder="" name="user_email" value="" required>
 					<p>Номер телефона</p>
-					<input type="text" class="order__form__field" id="name" pattern="[0-9]{6,18}" placeholder="" name="user_phone" value="" required>	
+					<input type="text" class="order__form__field" id="name" placeholder="" name="user_phone" value="" required>	
 					<p>Ваше сообщение</p>			
-					<textarea class="order__form__field" rows="10" pattern="^[А-Яа-яЁё\s]+$" placeholder="" name="user_message"></textarea>				
+					<textarea class="order__form__field" rows="10" placeholder="" name="user_message"></textarea>				
 					<button class="send__button" id="submit" type="submit" value="SEND">Отправить</button>
 					<br>
 					<a class="politic__font">⃰&nbsp;Нажимая кнопку «Отправить», Вы соглашаетесь с политикой конфиденциальности</a>
@@ -130,7 +130,7 @@
 					</div>
 					<li>
 						<button class="fade__sixth__line" id="modal__button">
-							<a href="#" onclick="return false;">Напишите нам</a>
+							<a href="#">Напишите нам</a>
 						</button>
 					</li>
 				</ul>				
@@ -1010,7 +1010,7 @@
 	<script>
 		var smooths = new smooths({  //  Initialize Smooths
 			section: 'scroll-section',
-			speed: 1000,
+			speed: 1500,
 			anchor: 'link'
 		});
 		</script>

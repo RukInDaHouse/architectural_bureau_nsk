@@ -13,16 +13,16 @@ $message = $_POST['user_message'];
 $mail->isSMTP();                                      
 $mail->Host = 'smtp.mail.ru'; 									
 $mail->SMTPAuth = true;
-$mail->Username = 'nickolscky.vyach@yandex.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = ''; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'nikolskiyforwork@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'aWXhL12LhZEu3tOydkpn'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
-$mail->setFrom('nickolscky.vyach@yandex.ru'); // от кого будет уходить письмо?
-$mail->addAddress('nickolscky.vyach@yandex.ru');     // Кому будет уходить письмо 
+$mail->setFrom('nikolskiyforwork@mail.ru'); // от кого будет уходить письмо?
+$mail->addAddress('nikolsky_arch_bureau@mail.ru');     // Кому будет уходить письмо 
 $mail->isHTML(true); 
 
-$mail->Subject = 'Заявка с тестового сайта';
+$mail->Subject = 'Заявка с сайта';
 $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email. '<br>Заказ этого пользователя: ' .$message;
 $mail->AltBody = '';
 
