@@ -1926,7 +1926,7 @@ footer {
     position: absolute;
     bottom: 0;
     list-style-type: none;
-    padding: 0px 0px 2em 5em;
+    padding: 0px 0px 2em 2.5em;
 }
 
 .gallery__hover__effect__text ul li:nth-child(2n) {
