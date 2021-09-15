@@ -62,37 +62,20 @@
 		<div class="mobile__menu__button desktopnone">
 			<div class="mobile__menu__hamburger"></div>	  
 		</div>
-		<div id="openModal" class="modalDialog invisible__block">
-			<div class="form__background">
-				<a id="close__modal" title="Закрыть" class="close">&#215;</a>
-				<form role="form" method="post" action="mail.php">
-					<p>Имя</p>
-					<input type="text" class="order__form__field" id="name" placeholder="" name="user_name" value="" required>
-					<p>Email</p>
-					<input type="email" class="order__form__field" id="email" placeholder="" name="user_email" value="" required>
-					<p>Номер телефона</p>
-					<input type="text" class="order__form__field" id="name" placeholder="" name="user_phone" value="" required>	
-					<p>Ваше сообщение</p>			
-					<textarea class="order__form__field" rows="10" placeholder="" name="user_message"></textarea>				
-					<button class="send__button" id="submit" type="submit" value="SEND">Отправить</button>
-					<br>
-					<a class="politic__font">⃰&nbsp;Нажимая кнопку «Отправить», Вы соглашаетесь с политикой конфиденциальности</a>
-				</form>
-			</div>
-		</div>
+
 		<div class="" id="gray__overlay"></div>
 		<div class="feedback__form" id="modal">
 			<a title="Закрыть" class="modal__arrow" id="modal__arrow">&#8594;</a>
 			<div class="form__window">
 				<form role="form" method="post" action="mail.php">
 					<p>Имя</p>
-					<input type="text" class="form__field" id="name" pattern="^[А-Яа-яЁё\s]+$" minlength="1" maxlength="18" placeholder="" name="user_name" value="" required>
+					<input type="text" class="order__form__field" id="name" placeholder="Иван Иванов" name="user_name" value="" required>
 					<p>Email</p>
-					<input type="email" class="form__field" id="email" placeholder="" name="user_email" value="" required>
+					<input type="email" class="order__form__field" id="email" placeholder="newadress@newadress.com" name="user_email" value="" required>
 					<p>Номер телефона</p>
-					<input type="text" class="form__field" id="name" pattern="[0-9]{6,18}" placeholder="" name="user_phone" value="" required>	
+					<input type="text" class="order__form__field" id="name" placeholder="+0 (000) 000-00-00" name="user_phone" value="" required>	
 					<p>Ваше сообщение</p>			
-					<textarea class="form__field" rows="10" pattern="^[А-Яа-яЁё\s]+$" placeholder="" name="user_message"></textarea>				
+					<textarea class="order__form__field" rows="10" placeholder="" name="user_message"></textarea>				
 					<button class="send__button" id="submit" type="submit" value="SEND">Отправить</button>
 					<br>
 					<a class="politic__font">⃰&nbsp;Нажимая кнопку «Отправить», Вы соглашаетесь с политикой конфиденциальности</a>
@@ -132,7 +115,7 @@
 					</div>
 					<li>
 						<button class="fade__sixth__line" id="modal__button">
-							<a href="#">Напишите нам</a>
+							<a href="#" onclick="return false;">Напишите нам</a>
 						</button>
 					</li>
 				</ul>				
@@ -694,6 +677,10 @@
 			<section class="conditions__block">
 				<div class="container">
 					<div class="row">
+						<div class="col-md-6 mx-auto price__block__head">
+							<h1>УСЛУГИ И ЦЕНЫ</h1>
+						</div>
+						<div class="col-md-6 mx-auto mobilenone"></div>
 						<div class="col-md-11">
 							<div class="condition__block accordion">
 								<span>
