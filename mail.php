@@ -14,7 +14,7 @@ $mail->isSMTP();
 $mail->Host = 'smtp.mail.ru'; 									
 $mail->SMTPAuth = true;
 $mail->Username = 'nikolskiyforwork@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'aWXhL12LhZEu3tOydkpn'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Password = ''; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
